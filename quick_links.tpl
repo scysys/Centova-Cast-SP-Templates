@@ -25,6 +25,7 @@ Sollten Sie nicht zurecht kommen, <a href="https://login.streampanel.net/submitt
 {/box}
 
 {$connection_details}
+</div>
 
 {if ($acctconfig.apptypes!="") and ($account.usesource!=2) and ($account.servertype!="WindowsMedia")}
 {box title="FTP Client Connections"}
@@ -46,6 +47,16 @@ Sollten Sie nicht zurecht kommen, <a href="https://login.streampanel.net/submitt
 <strong>Liquidsoap:</strong> Bei den Liquidsoap varianten wird Ihr Signal bei SHOUTcast V2 / Icecast V2 Servern über eine SHOUTcast V1 Source zum Server geleitet. Diese funktionalität stellt sicher, dass z.b. Icecast Server bei Streampanel auch von Broadcastern bedient werden können, welche eigentlich keine nativen Icecast Verbindungen erlauben.
 {/box}
 
+{box title="Manuals"}
+	{="Access the complete documentation for this control panel software"}:<br /><br />
+	
+	{if $account.reseller>0}
+	<a href="http://www.centova.com/doc/cast/reseller_manual" target="_blank">View Reseller's Guide</a> (HTML)<br />
+	{/if}
+	<a href="http://www.centova.com/doc/cast/user_manual" target="_blank">View User's Guide (HTML)</a> (English)<br />
+    <a href="http://www.centova.com/docs/cast/centovacast_user_guide.pdf" target="_blank">View User's Guide (PDF)</a> (English)<br />
+{/box}
+
 {box title="STREAMPANEL Ressourcen"}
 Sie finden hier eine Auswahl an weiteren Streampanel Produkten.<br/>
 Befassen Sie sich aufmerksam mit den Streampanel Produkten. Viele dieser Produkte sind bereits in Ihren Paketen inbegriffen.
@@ -59,15 +70,4 @@ Befassen Sie sich aufmerksam mit den Streampanel Produkten. Viele dieser Produkt
 <li><a href="https://www.streampanel.net/content-syndication/" target="_blank">Content Syndication</a></li>
 <li><a href="https://www.streampanel.net/zeitpunktgenaue-inhalte/" target="_blank">Zeitpunktgenaue Inhalte</a></li>
 </ul>
-{/box}
-
-
-{box title="Manuals"}
-	{="Access the complete documentation for this control panel software"}:<br /><br />
-	
-	{if $account.reseller>0}
-	<a href="http://www.centova.com/doc/cast/reseller_manual" target="_blank">View Reseller's Guide</a> (HTML)<br />
-	{/if}
-	<a href="http://www.centova.com/doc/cast/user_manual" target="_blank">View User's Guide (HTML)</a> (English)<br />
-    <a href="http://www.centova.com/docs/cast/centovacast_user_guide.pdf" target="_blank">View User's Guide (PDF)</a> (English)<br />
 {/box}
