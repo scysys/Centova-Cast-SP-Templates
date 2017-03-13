@@ -26,11 +26,11 @@
 <link rel="apple-touch-icon" sizes="152x152" href="https://cassets.streampanel.cloud/favicons/apple-touch-icon-152x152.png">
 <link rel="apple-touch-icon" sizes="180x180" href="https://cassets.streampanel.cloud/favicons/apple-touch-icon-180x180.png">
 
-<!-- OpenTag -->
-<script src="https://cassets.streampanel.cloud/opentag/global.js" async defer></script>
-
 <!-- jQuery is needed in Head Section -->
 <script src="https://cassetscc.streampanel.cloud/templates/streampanel/assets/global/plugins/jquery/jquery-1.11.3.min.js"></script>
+
+<!-- OpenTag -->
+<script src="https://cassets.streampanel.cloud/opentag/global.js" async defer></script>
 
 <!-- Centova Cast -->
 <style type="text/css">
@@ -98,7 +98,7 @@ form {
 <body class="account2" data-page="login">
 <!-- BEGIN LOGIN BOX -->
 
-<div class="container" id="login-block"> <i class="user-img icons-faces-users-03"></i>
+<div class="container" id="login-block"> <i class="user-img icons-alerts-11"></i>
   <div class="account-info"> <a href="/login/index.php" class="logo"></a>
     <ul>
       <li><i class="fa fa-sign-in"></i> <a href="/login/index.php" class="awhite"> Login</a></li>

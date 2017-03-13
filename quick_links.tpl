@@ -25,7 +25,6 @@ Sollten Sie nicht zurecht kommen, <a href="https://login.streampanel.net/submitt
 {/box}
 
 {$connection_details}
-</div>
 
 {if ($acctconfig.apptypes!="") and ($account.usesource!=2) and ($account.servertype!="WindowsMedia")}
 {box title="FTP Client Connections"}
@@ -62,6 +61,7 @@ Sie finden hier eine Auswahl an weiteren Streampanel Produkten.<br/>
 Befassen Sie sich aufmerksam mit den Streampanel Produkten. Viele dieser Produkte sind bereits in Ihren Paketen inbegriffen.
 <ul>
 <li><a href="https://www.streampanel.net/faq/" target="_blank">STREAMPANEL Dokumentation</a></li>
+<li><a href="https://www.streampanel.net/forum" target="_blank">STREAMPANEL Forum</a></li>
 <li><a href="https://status.streampanel.net/" target="_blank">STREAMPANEL Status</a></li>
 <li><a href="https://www.streampanel.net/cloud/" target="_blank">STREAMPANEL Cloud</a></li>
 <li><a href="https://www.streampanel.net/streampanel-mobile/" target="_blank">STREAMPANEL Mobile</a></li>
