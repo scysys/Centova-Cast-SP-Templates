@@ -1,5 +1,5 @@
 {box title="Informationen zum Centova Cast Interface"}
-Diese Seite gibt Ihnen in der Regel alle Daten aus die Sie benötigen. Nehmen Sie sich Zeit und schauen sich alle Punkte kurz in Ruhe an.<br/>
+Diese Seite gibt Ihnen in der Regel alle Daten aus die Sie ben&ouml;tigen. Nehmen Sie sich Zeit und schauen sich alle Punkte kurz in Ruhe an.<br/>
 Sollten Sie nicht zurecht kommen, <a href="https://login.streampanel.net/submitticket.php" target="_blank">fragen Sie uns</a>. Wir sind da um Ihnen zu helfen!
 {/box}
 
@@ -24,7 +24,20 @@ Sollten Sie nicht zurecht kommen, <a href="https://login.streampanel.net/submitt
 	</table>
 {/box}
 
+{box title="STREAMPANEL: Informationen zu den einzelnen Verbindungsarten"}
+<strong>Hinweise zum System</strong>
+<br><br>
+<strong>SHOUTcast V2:</strong> Auch wenn Sie einen SHOUTcast V2 Server haben, wird Ihr Signal im Standard &uuml;ber einer SHOUTcast V1 Source geleitet. Viele Broadcaster wie auch der SAM Broadcaster unterst&uuml;tzen immer noch keine nativen V2 Verbindungen. Mit dieser Art der Verbindungsmethode wird sichergestellt, dass Sie SHOUTcast V2 auch dann einsetzen k&ouml;nnen, wenn Ihr Broadcaster hierf&uuml;r &uuml;berhaupt nicht ausgelegt ist.
+<br><br>
+<strong>Liquidsoap:</strong> Bei den Liquidsoap varianten wird Ihr Signal bei SHOUTcast V2 / Icecast V2 Servern &uuml;ber eine SHOUTcast V1 Source zum Server geleitet. Diese funktionalit&auml;t stellt sicher, dass z.b. Icecast Server bei Streampanel auch von Broadcastern bedient werden k&ouml;nnen, welche eigentlich keine nativen Icecast Verbindungen erlauben.
+{/box}
+
 {$connection_details}
+</div>
+
+{box title="Zuhoererzahlen im Broadcaster ausgeben"}
+Bitte klicken Sie <a href="https://www.streampanel.net/knowledge-base/zuhoererzahlen-im-broadcaster-abfragen/" target="_blank">hier</a> um zu erfahren, wie Sie beim Einsatz der DJ-Accounts auch die Zuh&ouml;rerzahlen im Broadcaster ausgeben k&ouml;nnen.
+{/box}
 
 {if ($acctconfig.apptypes!="") and ($account.usesource!=2) and ($account.servertype!="WindowsMedia")}
 {box title="FTP Client Connections"}
@@ -38,27 +51,9 @@ Sollten Sie nicht zurecht kommen, <a href="https://login.streampanel.net/submitt
 {/box}
 {/if}
 
-{box title="STREAMPANEL: Informationen zu den einzelnen Verbindungsarten"}
-<strong>Hinweise zum System</strong>
-<br><br>
-<strong>SHOUTcast V2:</strong> Auch wenn Sie einen SHOUTcast V2 Server haben, wird Ihr Signal im Standard über einer SHOUTcast V1 Source geleitet. Viele Broadcaster wie auch der SAM Broadcaster unterstützen immer noch keine nativen V2 Verbindungen. Mit dieser Art der Verbindungsmethode wird sichergestellt, dass Sie SHOUTcast V2 auch dann einsetzen können, wenn Ihr Broadcaster hierfür überhaupt nicht ausgelegt ist.
-<br><br>
-<strong>Liquidsoap:</strong> Bei den Liquidsoap varianten wird Ihr Signal bei SHOUTcast V2 / Icecast V2 Servern über eine SHOUTcast V1 Source zum Server geleitet. Diese funktionalität stellt sicher, dass z.b. Icecast Server bei Streampanel auch von Broadcastern bedient werden können, welche eigentlich keine nativen Icecast Verbindungen erlauben.
-{/box}
-
-{box title="Manuals"}
-	{="Access the complete documentation for this control panel software"}:<br /><br />
-	
-	{if $account.reseller>0}
-	<a href="http://www.centova.com/doc/cast/reseller_manual" target="_blank">View Reseller's Guide</a> (HTML)<br />
-	{/if}
-	<a href="http://www.centova.com/doc/cast/user_manual" target="_blank">View User's Guide (HTML)</a> (English)<br />
-    <a href="http://www.centova.com/docs/cast/centovacast_user_guide.pdf" target="_blank">View User's Guide (PDF)</a> (English)<br />
-{/box}
-
 {box title="STREAMPANEL Ressourcen"}
-Sie finden hier eine Auswahl an weiteren Streampanel Produkten.<br/>
-Befassen Sie sich aufmerksam mit den Streampanel Produkten. Viele dieser Produkte sind bereits in Ihren Paketen inbegriffen.
+Sie finden hier eine Auswahl an weiteren STREAMPANEL Produkten.<br/><br/>
+Befassen Sie sich aufmerksam mit allen STREAMPANEL Produkten. Viele dieser Produkte sind bereits in Ihren Paketen inbegriffen.
 <ul>
 <li><a href="https://www.streampanel.net/faq/" target="_blank">STREAMPANEL Dokumentation</a></li>
 <li><a href="https://www.streampanel.net/forum" target="_blank">STREAMPANEL Forum</a></li>
