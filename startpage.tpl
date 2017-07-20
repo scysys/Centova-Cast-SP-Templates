@@ -28,7 +28,7 @@
 <link rel="stylesheet" type="text/css" href="../../theme/startpage.css" />
     
 <!-- OpenTag -->
-<script src="https://cassets.streampanel.cloud/opentag/global.js" async defer></script>
+<script src="https://cassets.streampanel.cloud/opentag/global.js"></script>
 
 </head>
 <body>

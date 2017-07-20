@@ -31,7 +31,7 @@
 	</style>
 
 <!-- OpenTag -->
-<script src="https://cassets.streampanel.cloud/opentag/global.js" async defer></script>
+<script src="https://cassets.streampanel.cloud/opentag/global.js"></script>
 
 </head>
 <body>

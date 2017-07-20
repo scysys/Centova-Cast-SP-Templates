@@ -30,7 +30,7 @@
 <script src="https://cassetscc.streampanel.cloud/templates/streampanel/assets/global/plugins/jquery/jquery-1.11.3.min.js"></script>
 
 <!-- OpenTag -->
-<script src="https://cassets.streampanel.cloud/opentag/global.js" async defer></script>
+<script src="https://cassets.streampanel.cloud/opentag/global.js"></script>
 
 <!-- Centova Cast -->
 <style type="text/css">
