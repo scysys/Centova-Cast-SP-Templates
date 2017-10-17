@@ -140,7 +140,7 @@
 
 <div id="footer">
 	<div id="footer_content">
-	{="Logged in as: %s",$loginname|htmlentities} <span class="sep">|</span> Centova Cast v{$_CONSTANTS.PRODUCT_VERSION} <span class="sep">|</span> {="Copyright"} 2006-{$_CONSTANTS.PRODUCT_YEAR}, <a href="http://www.centova.com">Centova Technologies Inc.</a> <span class="sep">|</span> <a href="https://www.streampanel.net/" title="STREAMPANEL" target="_blank">STREAMPANEL</a> <span class="sep">|</span> <a href="https://www.streampanel.net/cloud/" title="STREAMPANEL Cloud" target="_blank">STREAMPANEL Cloud</a> <span class="sep">|</span> <a href="https://www.streampanel.net/wissensbasis/centova-cast-wie-fange-ich-an/" title="Wie fange ich an?" target="_blank">Wie fange ich an?</a>
+	{="Logged in as: %s",$loginname|htmlentities} <span class="sep">|</span> Centova Cast v{$_CONSTANTS.PRODUCT_VERSION} <span class="sep">|</span> {="Copyright"} 2006-{$_CONSTANTS.PRODUCT_YEAR}, <a href="http://www.centova.com">Centova Technologies Inc.</a> <span class="sep">|</span> <a href="https://www.streampanel.net/cloud/" title="STREAMPANEL Cloud" target="_blank">STREAMPANEL Cloud</a> <span class="sep">|</span> <a href="https://www.streampanel.net/wissensbasis/centova-cast-wie-fange-ich-an/" title="Wie fange ich an?" target="_blank">Wie fange ich an?</a> <span class="sep">|</span> <a href="https://www.streampanel.net/kontakt/datenschutz/" title="Datenschutz" target="_blank">Datenschutz</a> <span class="sep">|</span> <a href="#" id="edit-cookieconsent-settings">Cookie einstellungen</a> <span class="sep">|</span> <a href="https://www.streampanel.net/kontakt/impressum/" title="Impressum" target="_blank">Impressum</a>
 	</div>
 </div>
 
