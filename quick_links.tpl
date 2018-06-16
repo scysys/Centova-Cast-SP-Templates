@@ -59,8 +59,8 @@ Befassen Sie sich aufmerksam mit allen STREAMPANEL Produkten. Viele dieser Produ
 <li><a href="https://www.streampanel.net/forum" target="_blank">STREAMPANEL Forum</a></li>
 <li><a href="https://status.streampanel.net/" target="_blank">STREAMPANEL Status</a></li>
 <li><a href="https://www.streampanel.net/cloud/" target="_blank">STREAMPANEL Cloud</a></li>
-<li><a href="https://www.streampanel.net/streampanel-mobile/" target="_blank">STREAMPANEL Mobile</a></li>
-<li><a href="https://www.streampanel.net/streampanel-apps/" target="_blank">STREAMPANEL Apps</a></li>
+<li><a href="https://www.streampanel.net/mobile/" target="_blank">STREAMPANEL Mobile</a></li>
+<li><a href="https://www.streampanel.net/apps/" target="_blank">STREAMPANEL Apps</a></li>
 <li><a href="https://www.streampanel.net/webhosting/" target="_blank">STREAMPANEL Webhosting</a></li>
 <li><a href="https://www.streampanel.net/content-syndication/" target="_blank">Content Syndication</a></li>
 <li><a href="https://www.streampanel.net/zeitpunktgenaue-inhalte/" target="_blank">Zeitpunktgenaue Inhalte</a></li>

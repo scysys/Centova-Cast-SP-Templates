@@ -27,8 +27,13 @@
 <script language="javascript" type="text/javascript" src="/system/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="../../theme/startpage.css" />
     
-<!-- OpenTag -->
-<script src="https://cassets.streampanel.cloud/opentag/global.js"></script>
+<!-- Matomo Tag Manager -->
+<script type="text/javascript">
+var _mtm = _mtm || [];
+_mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampanel.net/js/container_KVNJAR2p.js'; s.parentNode.insertBefore(g,s);
+</script>
 
 </head>
 <body>
