@@ -11,7 +11,7 @@ Sollten Sie nicht zurecht kommen, <a href="https://login.streampanel.net/submitt
 	<br /><br /><hr/><br />
 	SSL-Streaming-URL: <a target="_blank" rel="noopener" href="https://stream.streampanel.net/mp3.php?url={$serveradminpage}&mountpoint=stream">https://stream.streampanel.net/mp3.php?url={$serveradminpage}&amp;mountpoint=stream</a>
 	<br />
-	Wissenswertes zum SSL-Streaming: <a target="_blank" rel="noopener" href="https://www.streampanel.net/kb/ssl-streaming-shoutcast-v1-v2-icecast-v2/">https://stream.streampanel.net/mp3.php?url={$serveradminpage}&amp;mountpoint=stream</a>
+	Wissenswertes zum SSL-Streaming: <a target="_blank" rel="noopener" href="https://www.streampanel.net/kb/ssl-streaming-shoutcast-v1-v2-icecast-v2/">https://www.streampanel.net/kb/ssl-streaming-shoutcast-v1-v2-icecast-v2/</a>
 {/if}
 {/box}
 
