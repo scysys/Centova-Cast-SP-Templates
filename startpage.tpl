@@ -69,7 +69,7 @@ g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampa
 <div id="footer">
 	<div class="content">
 		<div style="float: right">{="Powered by "} <a target="_blank" rel="nofollow" href="http://www.centova.com">Centova Cast</a></div>
-		<a href="https://www.streampanel.net/cloud/" title="STREAMPANEL Cloud">STREAMPANEL Cloud</a> | <a href="https://www.streampanel.net/kontakt/datenschutz/" title="Datenschutz" target="_blank">Datenschutz</a> | <a href="https://www.streampanel.net/kontakt/cookies/" target="_blank">Cookie-Einstellungen</a> | <a href="https://www.streampanel.net/kontakt/impressum/" title="Impressum" target="_blank">Impressum</a>
+		<a href="https://www.streampanel.net/cloud/" title="STREAMPANEL Cloud">STREAMPANEL Cloud</a> | <a href="https://www.streampanel.net/kontakt/datenschutz/" title="Datenschutz" target="_blank" rel="noopener">Datenschutz</a> | <a href="https://www.streampanel.net/kontakt/cookies/" target="_blank" rel="noopener">Cookie-Einstellungen</a> | <a href="https://www.streampanel.net/kontakt/impressum/" title="Impressum" target="_blank" rel="noopener">Impressum</a>
 	</div>
 </div>
 

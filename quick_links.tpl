@@ -1,19 +1,21 @@
 {box title="Informationen zum Centova Cast Interface"}
 Diese Seite gibt Ihnen in der Regel alle Daten aus die Sie ben&ouml;tigen. Nehmen Sie sich Zeit und schauen sich alle Punkte kurz in Ruhe an.<br/>
-Sollten Sie nicht zurecht kommen, <a href="https://login.streampanel.net/submitticket.php" target="_blank">fragen Sie uns</a>. Wir sind da um Ihnen zu helfen!
+Sollten Sie nicht zurecht kommen, <a href="https://login.streampanel.net/submitticket.php" target="_blank" rel="noopener">fragen Sie uns</a>. Wir sind da um Ihnen zu helfen!
 {/box}
 
 {box title="Quick Links"}
-	{="Your stream start page"}:<br />
-	<a target="_blank" href="{$baseurl}start/{$account.username}">{$baseurl}start/{$account.username}</a>
+	{="Your stream start page"}: <a target="_blank" rel="noopener" href="{$baseurl}start/{$account.username}">{$baseurl}start/{$account.username}</a>
 {if $serveradminpage!=""}
-	<br /><br />
-	{="Your streaming server index page"}:<br />
-	<a target="_blank" href="{$serveradminpage}">{$serveradminpage}</a>
+	<br />
+	{="Your streaming server index page"}: <a target="_blank" rel="noopener" href="{$serveradminpage}">{$serveradminpage}</a>
+	<br /><br /><hr/><br />
+	SSL-Streaming-URL: <a target="_blank" rel="noopener" href="https://stream.streampanel.net/mp3.php?url={$serveradminpage}&mountpoint=stream">https://stream.streampanel.net/mp3.php?url={$serveradminpage}&amp;mountpoint=stream</a>
+	<br />
+	Wissenswertes zum SSL-Streaming: <a target="_blank" rel="noopener" href="https://www.streampanel.net/kb/ssl-streaming-shoutcast-v1-v2-icecast-v2/">https://stream.streampanel.net/mp3.php?url={$serveradminpage}&amp;mountpoint=stream</a>
 {/if}
 {/box}
 
-{box title="Tune-In Links"}
+{box title="Tune-In Links (HTTP-Streaming)"}
 	<table cellsacing="0" cellpadding="0" border="0">
 	{loop $player=$players}
 	<tr>
@@ -25,7 +27,7 @@ Sollten Sie nicht zurecht kommen, <a href="https://login.streampanel.net/submitt
 {/box}
 
 {box title="STREAMPANEL: Informationen zu den einzelnen Verbindungsarten"}
-<strong>Hinweise zum System</strong>
+<strong>Hinweise zu den STREAMPANEL Systemen</strong>
 <br><br>
 <strong>SHOUTcast V2:</strong> Auch wenn Sie einen SHOUTcast V2 Server haben, wird Ihr Signal im Standard &uuml;ber einer SHOUTcast V1 Source geleitet. Viele Broadcaster wie auch der SAM Broadcaster unterst&uuml;tzen immer noch keine nativen V2 Verbindungen. Mit dieser Art der Verbindungsmethode wird sichergestellt, dass Sie SHOUTcast V2 auch dann einsetzen k&ouml;nnen, wenn Ihr Broadcaster hierf&uuml;r &uuml;berhaupt nicht ausgelegt ist.
 <br><br>
@@ -33,10 +35,10 @@ Sollten Sie nicht zurecht kommen, <a href="https://login.streampanel.net/submitt
 {/box}
 
 {$connection_details}
-</div>
+
 
 {box title="Zuhoererzahlen im Broadcaster ausgeben"}
-Bitte klicken Sie <a href="https://www.streampanel.net/knowledge-base/zuhoererzahlen-im-broadcaster-abfragen/" target="_blank">hier</a> um zu erfahren, wie Sie beim Einsatz der DJ-Accounts auch die Zuh&ouml;rerzahlen im Broadcaster ausgeben k&ouml;nnen.
+Bitte klicken Sie <a href="https://www.streampanel.net/kb/zuhoererzahlen-im-broadcaster-abfragen-anzeigen/" target="_blank">hier</a> um zu erfahren, wie Sie beim Einsatz der DJ-Accounts auch die Zuh&ouml;rerzahlen im Broadcaster ausgeben k&ouml;nnen.
 {/box}
 
 {if ($acctconfig.apptypes!="") and ($account.usesource!=2) and ($account.servertype!="WindowsMedia")}
@@ -53,16 +55,17 @@ Bitte klicken Sie <a href="https://www.streampanel.net/knowledge-base/zuhoererza
 
 {box title="STREAMPANEL Ressourcen"}
 Sie finden hier eine Auswahl an weiteren STREAMPANEL Produkten.<br/><br/>
-Befassen Sie sich aufmerksam mit allen STREAMPANEL Produkten. Viele dieser Produkte sind bereits in Ihren Paketen inbegriffen.
+Befassen Sie sich aufmerksam mit allen STREAMPANEL Produkten. Viele dieser Produkte sind Kostenlos bereits in Ihren Paketen inbegriffen.
 <ul>
-<li><a href="https://www.streampanel.net/faq/" target="_blank">STREAMPANEL Dokumentation</a></li>
-<li><a href="https://www.streampanel.net/forum" target="_blank">STREAMPANEL Forum</a></li>
-<li><a href="https://status.streampanel.net/" target="_blank">STREAMPANEL Status</a></li>
-<li><a href="https://www.streampanel.net/cloud/" target="_blank">STREAMPANEL Cloud</a></li>
-<li><a href="https://www.streampanel.net/mobile/" target="_blank">STREAMPANEL Mobile</a></li>
-<li><a href="https://www.streampanel.net/apps/" target="_blank">STREAMPANEL Apps</a></li>
-<li><a href="https://www.streampanel.net/webhosting/" target="_blank">STREAMPANEL Webhosting</a></li>
-<li><a href="https://www.streampanel.net/content-syndication/" target="_blank">Content Syndication</a></li>
-<li><a href="https://www.streampanel.net/zeitpunktgenaue-inhalte/" target="_blank">Zeitpunktgenaue Inhalte</a></li>
+<li><a href="https://www.streampanel.net/faq/" target="_blank" rel="noopener">STREAMPANEL Dokumentation</a></li>
+<li><a href="https://www.streampanel.net/forum" target="_blank" rel="noopener">STREAMPANEL Forum</a></li>
+<li><a href="https://status.streampanel.net/" target="_blank" rel="noopener">STREAMPANEL Status</a></li>
+<li><a href="https://www.streampanel.net/cloud/" target="_blank" rel="noopener">STREAMPANEL Cloud</a></li>
+<li><a href="https://www.streampanel.net/mobile/" target="_blank" rel="noopener">STREAMPANEL Mobile</a></li>
+<li><a href="https://www.streampanel.net/apps/" target="_blank" rel="noopener">STREAMPANEL Apps</a></li>
+<li><a href="https://www.streampanel.net/webhosting/" target="_blank" rel="noopener">STREAMPANEL Webhosting</a></li>
+<li><a href="https://www.streampanel.net/content-syndication/" target="_blank" rel="noopener">Content Syndication</a></li>
+<li><a href="https://www.streampanel.net/zeitpunktgenaue-inhalte/" target="_blank" rel="noopener">Zeitpunktgenaue Inhalte</a></li>
 </ul>
 {/box}
+</div>
