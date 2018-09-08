@@ -145,9 +145,35 @@ g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampa
 
 <div id="footer">
 	<div id="footer_content">
-	{="Logged in as: %s",$loginname|htmlentities} <span class="sep">|</span> Centova Cast v{$_CONSTANTS.PRODUCT_VERSION} <span class="sep">|</span> {="Copyright"} 2006-{$_CONSTANTS.PRODUCT_YEAR}, <a href="http://www.centova.com" target="_blank" rel="noopener">Centova Technologies Inc.</a> <span class="sep">|</span> <a href="https://www.streampanel.net/cloud/" title="STREAMPANEL Cloud" target="_blank" rel="noopener">STREAMPANEL Cloud</a> <span class="sep">|</span> <a href="https://www.streampanel.net/kb/centova-cast-wie-fange-ich-an/" title="Wie fange ich an?" target="_blank" rel="noopener">Wie fange ich an?</a> <span class="sep">|</span> <a href="https://www.streampanel.net/kontakt/datenschutz/" title="Datenschutz" target="_blank" rel="noopener">Datenschutz</a> <span class="sep">|</span> <a href="https://www.streampanel.net/kontakt/cookies/" target="_blank" rel="noopener">Cookie-Einstellungen</a> <span class="sep">|</span> <a href="https://www.streampanel.net/kontakt/impressum/" title="Impressum" target="_blank" rel="noopener">Impressum</a>
+	{="Logged in as: %s",$loginname|htmlentities} <span class="sep">|</span> Centova Cast v{$_CONSTANTS.PRODUCT_VERSION} <span class="sep">|</span> {="Copyright"} 2006-{$_CONSTANTS.PRODUCT_YEAR}, <a href="http://www.centova.com" target="_blank" rel="noopener">Centova Technologies Inc.</a> <span class="sep">|</span> <a href="https://www.streampanel.net/cloud/" title="STREAMPANEL Cloud" target="_blank" rel="noopener">STREAMPANEL Cloud</a> <span class="sep">|</span> <a href="https://www.streampanel.net/kb/centova-cast-wie-fange-ich-an/" title="Wie fange ich an?" target="_blank" rel="noopener">Wie fange ich an?</a> <span class="sep">|</span> <a href="https://www.streampanel.net/kontakt/datenschutz/" title="Datenschutz" target="_blank" rel="noopener">Datenschutz</a> <span class="sep">|</span> <a href="https://www.streampanel.net/kontakt/cookies/" target="_blank" rel="noopener">Cookie-Einstellungen</a> <span class="sep">|</span> <a href="https://www.streampanel.net/kontakt/impressum/" title="Impressum" target="_blank" rel="noopener">Impressum</a><br><br>
 	</div>
 </div>
 
+<script type="text/javascript">
+if (document.cookie.indexOf('cookie_consent_level=functional') > -1 ) {
+var js_script = document.createElement('script');
+js_script.type = "text/javascript";
+js_script.id = "05d0a348b55f087fd24e61004a977853";
+js_script.src = "https://lz.streampanel.net/script.php?id=05d0a348b55f087fd24e61004a977853";
+js_script.async = true;
+document.getElementsByTagName('head')[0].appendChild(js_script);
+} else if (document.cookie.indexOf('cookie_consent_level=tracking') > -1 ) {
+var js_script = document.createElement('script');
+js_script.type = "text/javascript";
+js_script.id = "05d0a348b55f087fd24e61004a977853";
+js_script.src = "https://lz.streampanel.net/script.php?id=05d0a348b55f087fd24e61004a977853";
+js_script.async = true;
+document.getElementsByTagName('head')[0].appendChild(js_script);
+} else if (document.cookie.indexOf('cookie_consent_level=targeting') > -1 ) {
+var js_script = document.createElement('script');
+js_script.type = "text/javascript";
+js_script.id = "05d0a348b55f087fd24e61004a977853";
+js_script.src = "https://lz.streampanel.net/script.php?id=05d0a348b55f087fd24e61004a977853";
+js_script.async = true;
+document.getElementsByTagName('head')[0].appendChild(js_script);
+} else {
+// To activate STREAMPANEL Livesupport, change your cookie settings.
+}
+</script>
 </body>
 </html>
