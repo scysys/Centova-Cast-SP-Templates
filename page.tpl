@@ -166,73 +166,68 @@ body {
     <!--end::Custom Style -->
 
     <!--begin::Custom Script -->
-    <script>
+<script>
 $(document).ready(function() {
     var url = document.location.href;
 
-    if (url === 'https://moor.streampanel.net:2199/client/index.php?page=library'){
+    if (url === document.location.href + '?page=library'){
         $("body").addClass("m-aside-left--hide");
 		$("div.m-subheader").addClass("d-none");
 		$("div.hide-centova-header").addClass("d-none");
 		$("div.m-content").removeClass();
 		$("li.ifconfig-autodj").addClass("m-menu__item--open m-menu__item--active");
     }
-    else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=filemanager') {
+    else if (url === document.location.href + '?page=filemanager') {
         $("body").addClass("m-aside-left--hide");
 		$("div.m-subheader").addClass("d-none");
 		$("div.hide-centova-header").addClass("d-none");
 		$("div.m-content").removeClass();
 		$("li.ifconfig-autodj").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === 'https://moor.streampanel.net:2199/client/index.php') {
+	else if (url === document.location.href) {
 		$("li.ifconfig-home").addClass("m-menu__item--open m-menu__item--active");
 		$("ul.m-menu__nav li:ifconfig-home(2)").addClass("m-menu__item--active");
     }
-	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=quicklinks') {
+	else if (url === document.location.href + '?page=quicklinks') {
 		$("li.ifconfig-home").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=configure') {
+	else if (url === document.location.href + '?page=configure') {
 		$("li.ifconfig-settings").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=widgets') {
+	else if (url === document.location.href + '?page=widgets') {
 		$("li.ifconfig-settings").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=djaccounts') {
+	else if (url === document.location.href + '?page=djaccounts') {
 		$("li.ifconfig-settings").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=statistics') {
+	else if (url === document.location.href + '?page=statistics') {
 		$("li.ifconfig-statistics").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=reportdownloads') {
+	else if (url === document.location.href + '?page=reportdownloads') {
 		$("li.ifconfig-statistics").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=livestats') {
+	else if (url === document.location.href + '?page=livestats') {
 		$("li.ifconfig-statistics").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=logs') {
+	else if (url === document.location.href + '?page=logs') {
 		$("li.ifconfig-statistics").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=control&action=stop') {
+	else if (url === document.location.href + '?page=control&action=stop') {
 		$("li.ifconfig-server").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=control&action=restart') {
+	else if (url === document.location.href + '?page=control&action=restart') {
 		$("li.ifconfig-server").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=control&action=start') {
+	else if (url === document.location.href + '?page=control&action=start') {
 		$("li.ifconfig-server").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=playlists') {
+	else if (url === document.location.href + '?page=playlists') {
 		$("li.ifconfig-autodj").addClass("m-menu__item--open m-menu__item--active");
     }
 	else {
         $("body").addClass("");
     }
 }); 
-	
-console.log('document.location', document.location.href);
-console.log('location.pathname',  window.location.pathname); // Returns path only
-console.log('location.pathname.includes',  window.location.pathname.includes); // Returns path only
-console.log('location.href', window.location.href); // Returns full URL
 </script>
     <!--end::Custom Script -->
 
