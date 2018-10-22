@@ -1,179 +1,393 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" >
+<!-- begin::Head -->
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-	<title>{$title} {$section.subtitle|htmlentities}</title>
-	{$head}
-	<link rel="stylesheet" type="text/css" href="../theme/style.css" />{if $wide}
-	<link rel="stylesheet" type="text/css" href="../theme/wide.css" />{/if}
+<meta charset="utf-8" />
+<title>{$title} {$section.subtitle|htmlentities}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
+<!--begin::Web font -->
+<style type="text/css">
+/* poppins-300 - latin */
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 300;
+	src: url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-300.eot'); /* IE9 Compat Modes */
+	src: local('Poppins Light'), local('Poppins-Light'), url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-300.woff2') format('woff2'), /* Super Modern Browsers */ url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-300.woff') format('woff'), /* Modern Browsers */ url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */ url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-300.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+/* poppins-regular - latin */
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	src: url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-regular.eot'); /* IE9 Compat Modes */
+	src: local('Poppins Regular'), local('Poppins-Regular'), url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-regular.woff') format('woff'), /* Modern Browsers */ url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+/* poppins-500 - latin */
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	src: url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-500.eot'); /* IE9 Compat Modes */
+	src: local('Poppins Medium'), local('Poppins-Medium'), url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-500.woff2') format('woff2'), /* Super Modern Browsers */ url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-500.woff') format('woff'), /* Modern Browsers */ url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */ url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-500.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+/* poppins-600 - latin */
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	src: url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-600.eot'); /* IE9 Compat Modes */
+	src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-600.woff2') format('woff2'), /* Super Modern Browsers */ url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-600.woff') format('woff'), /* Modern Browsers */ url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */ url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-600.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+/* poppins-700 - latin */
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	src: url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-700.eot'); /* IE9 Compat Modes */
+	src: local('Poppins Bold'), local('Poppins-Bold'), url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-700.woff2') format('woff2'), /* Super Modern Browsers */ url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-700.woff') format('woff'), /* Modern Browsers */ url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */ url('https://spuassets.streampanel.cloud/global/fonts/poppins/poppins-v5-latin-700.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+/* roboto-300 - latin */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	src: url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-300.eot'); /* IE9 Compat Modes */
+	src: local('Roboto Light'), local('Roboto-Light'), url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-300.woff2') format('woff2'), /* Super Modern Browsers */ url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-300.woff') format('woff'), /* Modern Browsers */ url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */ url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-300.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-regular - latin */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-regular.eot'); /* IE9 Compat Modes */
+	src: local('Roboto'), local('Roboto-Regular'), url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-regular.woff') format('woff'), /* Modern Browsers */ url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-500 - latin */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	src: url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-500.eot'); /* IE9 Compat Modes */
+	src: local('Roboto Medium'), local('Roboto-Medium'), url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-500.woff2') format('woff2'), /* Super Modern Browsers */ url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-500.woff') format('woff'), /* Modern Browsers */ url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */ url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-500.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+/* roboto-700 - latin */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	src: url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-700.eot'); /* IE9 Compat Modes */
+	src: local('Roboto Bold'), local('Roboto-Bold'), url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-700.woff2') format('woff2'), /* Super Modern Browsers */ url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-700.woff') format('woff'), /* Modern Browsers */ url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */ url('https://spuassets.streampanel.cloud/global/fonts/roboto/roboto-v18-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+</style>
+<!--end::Web font -->
+
+<!--begin::Global Theme Styles -->
+<link href="https://spuassets.streampanel.cloud/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
+<link href="https://spuassets.streampanel.cloud/base/style.bundle.css" rel="stylesheet" type="text/css" />
+<!--end::Global Theme Styles -->
+
+<!-- whhg-fonts -->
+<link rel="stylesheet" type="text/css" media="all" href="https://spuassets.streampanel.cloud/global/fonts/whhg-font/css/whhg.css" />
+<link rel="stylesheet" type="text/css" media="all" href="https://spuassets.streampanel.cloud/global/fonts/whhg-font/css/whhg-custom-centovacast.css" />
+
+<!--begin::Favicons -->
+<link rel="shortcut icon" href="https://cassets.streampanel.cloud/favicons/favicon.png">
+<link rel="icon" type="image/png" href="https://cassets.streampanel.cloud/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="https://cassets.streampanel.cloud/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://cassets.streampanel.cloud/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://cassets.streampanel.cloud/favicons/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="https://cassets.streampanel.cloud/favicons/favicon-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" sizes="57x57" href="https://cassets.streampanel.cloud/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://cassets.streampanel.cloud/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://cassets.streampanel.cloud/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://cassets.streampanel.cloud/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://cassets.streampanel.cloud/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://cassets.streampanel.cloud/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://cassets.streampanel.cloud/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://cassets.streampanel.cloud/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://cassets.streampanel.cloud/favicons/apple-touch-icon-180x180.png">
+<!--end::Favicons -->
+
+<!--begin::Global Theme Bundle -->
+<script src="https://spuassets.streampanel.cloud/vendors/base/vendors.bundle.js" type="text/javascript"></script>
+<script src="https://spuassets.streampanel.cloud/base/scripts.bundle.js" type="text/javascript"></script>
+<!--end::Global Theme Bundle -->
+
+<!--begin::Custom Page Scripts -->
+{$head}
+<link rel="stylesheet" type="text/css" href="../theme/style.css" />
+{if $wide}
+<link rel="stylesheet" type="text/css" href="../theme/wide.css" />
+{/if}
+
+	
 	{$custom_head}
 
-	<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="../theme/ie7.css" /><![endif]-->
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="../theme/ie7.css" /><![endif]-->
 {check $rawcontent>0}
-	<style type="text/css">
-	body {
-		background-color: #E5E5E5;
-		background-image: none;
-	}
-	#rawcontent {
-		border-top: 1px solid white;
-	}
-	</style>
+<style type="text/css">
+body {
+	background-color: #E5E5E5;
+	background-image: none;
+}
+#rawcontent {
+	border-top: 1px solid white;
+}
+</style>
 {/check}
-	<style type="text/css">
-	#logobar {
-    background-image: none;
-    background-color: #13223C !important;
-    height: 51px;
-    color: #FFF;
-	}
-	</style>
+    <style type="text/css">
+#logobar {
+	background-image: none;
+	background-color: #13223C !important;
+	height: 51px;
+	color: #FFF;
+}
+</style>
+    <!--end::Custom Page Scripts -->
 
-<!-- Matomo Tag Manager -->
-<script type="text/javascript">
+    <!--begin::Custom Style -->
+    <style type="text/css">
+#logobar {
+	height: 0px !important;
+	visibility: hidden !important;
+}
+#coverfloat {
+	visibility: hidden !important;
+}
+#coverfloat_gloss {
+	visibility: hidden !important;
+}
+#client-audio {
+	visibility: hidden !important;
+}
+</style>
+    <!--end::Custom Style -->
+
+    <!--begin::Custom Script -->
+    <script>
+$(document).ready(function() {
+    var url = document.location.href;
+
+    if (url === 'https://moor.streampanel.net:2199/client/index.php?page=library'){
+        $("body").addClass("m-aside-left--hide");
+		$("div.m-subheader").addClass("d-none");
+		$("div.hide-centova-header").addClass("d-none");
+		$("div.m-content").removeClass();
+		$("li.ifconfig-autodj").addClass("m-menu__item--open m-menu__item--active");
+    }
+    else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=filemanager') {
+        $("body").addClass("m-aside-left--hide");
+		$("div.m-subheader").addClass("d-none");
+		$("div.hide-centova-header").addClass("d-none");
+		$("div.m-content").removeClass();
+		$("li.ifconfig-autodj").addClass("m-menu__item--open m-menu__item--active");
+    }
+	else if (url === 'https://moor.streampanel.net:2199/client/index.php') {
+		$("li.ifconfig-home").addClass("m-menu__item--open m-menu__item--active");
+		$("ul.m-menu__nav li:ifconfig-home(2)").addClass("m-menu__item--active");
+    }
+	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=quicklinks') {
+		$("li.ifconfig-home").addClass("m-menu__item--open m-menu__item--active");
+    }
+	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=configure') {
+		$("li.ifconfig-settings").addClass("m-menu__item--open m-menu__item--active");
+    }
+	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=widgets') {
+		$("li.ifconfig-settings").addClass("m-menu__item--open m-menu__item--active");
+    }
+	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=djaccounts') {
+		$("li.ifconfig-settings").addClass("m-menu__item--open m-menu__item--active");
+    }
+	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=statistics') {
+		$("li.ifconfig-statistics").addClass("m-menu__item--open m-menu__item--active");
+    }
+	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=reportdownloads') {
+		$("li.ifconfig-statistics").addClass("m-menu__item--open m-menu__item--active");
+    }
+	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=livestats') {
+		$("li.ifconfig-statistics").addClass("m-menu__item--open m-menu__item--active");
+    }
+	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=logs') {
+		$("li.ifconfig-statistics").addClass("m-menu__item--open m-menu__item--active");
+    }
+	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=control&action=stop') {
+		$("li.ifconfig-server").addClass("m-menu__item--open m-menu__item--active");
+    }
+	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=control&action=restart') {
+		$("li.ifconfig-server").addClass("m-menu__item--open m-menu__item--active");
+    }
+	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=control&action=start') {
+		$("li.ifconfig-server").addClass("m-menu__item--open m-menu__item--active");
+    }
+	else if (url === 'https://moor.streampanel.net:2199/client/index.php?page=playlists') {
+		$("li.ifconfig-autodj").addClass("m-menu__item--open m-menu__item--active");
+    }
+	else {
+        $("body").addClass("");
+    }
+}); 
+	
+console.log('document.location', document.location.href);
+console.log('location.pathname',  window.location.pathname); // Returns path only
+console.log('location.pathname.includes',  window.location.pathname.includes); // Returns path only
+console.log('location.href', window.location.href); // Returns full URL
+</script>
+    <!--end::Custom Script -->
+
+    <!--begin::Matomo Tag Manager -->
+    <script type="text/javascript">
 var _mtm = _mtm || [];
 _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
 var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
 g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampanel.net/js/container_KVNJAR2p.js'; s.parentNode.insertBefore(g,s);
 </script>
+    <!--end::Matomo Tag Manager -->
+</head><!-- end::Head -->
+<!-- begin::Body -->
+<body class="m-page--fluid m--skin- m-content--skin-light2 m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--fixed m-aside-left--offcanvas m-aside-right--enabled m-footer--push m-aside--offcanvas-default">
 
-</head>
-<body>
-	
-<div id="topbar">
-	{include "topbar.tpl"}
+<!-- begin:: Page -->
+<div class="m-grid m-grid--hor m-grid--root m-page"> 
+  
+  <!-- BEGIN: Header -->
+  <header id="m_header" class="m-grid__item m-header"m-minimize-offset="200" m-minimize-mobile-offset="200" >
+    <div class="m-container m-container--fluid m-container--full-height">
+      <div class="m-stack m-stack--ver m-stack--desktop"> 
+        <!-- BEGIN: Brand -->
+        <div class="m-stack__item m-brand  m-brand--skin-dark ">
+          <div class="m-stack m-stack--ver m-stack--general">
+            <div class="m-stack__item m-stack__item--middle m-brand__logo"> <a href="/client/index.php" class="m-brand__logo-wrapper"> <img src="https://cassets.streampanel.cloud/logo/162w.png" /> </a> </div>
+            <div class="m-stack__item m-stack__item--middle m-brand__tools"> 
+              
+              <!-- BEGIN: Responsive Aside Left Menu Toggler --> 
+              <a href="javascript:;" id="m_aside_left_offcanvas_toggle" class="m-brand__icon m-brand__toggler m-brand__toggler--left m--visible-tablet-and-mobile-inline-block"> <span></span> </a> 
+              <!-- END --> 
+              
+              <!-- BEGIN: Aside Hide Toggle --> 
+              <a href="javascript:;" id="m_aside_left_hide_toggle" class="m-brand__icon m-brand__toggler m-brand__toggler--left m--hidden-tablet-and-mobile"> <span></span> </a> 
+              <!-- END --> 
+              
+            </div>
+          </div>
+        </div>
+        <!-- END: Brand -->
+        <div class="m-stack__item m-stack__item--fluid m-header-head" id="m_header_nav"> 
+          <!-- BEGIN: Horizontal Menu -->
+          <button class="m-aside-header-menu-mobile-close  m-aside-header-menu-mobile-close--skin-dark " id="m_aside_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
+          <div id="m_header_menu" class="m-header-menu m-aside-header-menu-mobile m-aside-header-menu-mobile--offcanvas  m-header-menu--skin-dark m-header-menu--submenu-skin-light m-aside-header-menu-mobile--skin-dark m-aside-header-menu-mobile--submenu-skin-light "  >
+            <ul class="m-menu__nav ">
+              <!--<li class="m-menu__item  m-menu__item--submenu m-menu__item--rel"  m-menu-submenu-toggle="click" m-menu-link-redirect="1" aria-haspopup="true"><a href="https://www.streampanel.net/bb/" target="_blank" class="m-menu__link"><i class="m-menu__link-icon icon-forumsalt"></i><span class="m-menu__link-text">STREAMPANEL Forum</span></a> </li>-->
+            </ul>
+          </div>
+          <!-- END: Horizontal Menu --> <!-- BEGIN: Topbar -->
+          <div id="m_header_topbar" class="m-topbar  m-stack m-stack--ver m-stack--general"> </div>
+          <!-- END: Topbar --> 
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- END: Header --> 
+  <!-- begin::Body -->
+  <div class="m-grid__item m-grid__item--fluid m-grid m-grid--ver-desktop m-grid--desktop m-body"> 
+    
+    <!-- BEGIN: Left Aside -->
+    <button class="m-aside-left-close  m-aside-left-close--skin-dark " id="m_aside_left_close_btn"><i class="la la-close"></i></button>
+    <div id="m_aside_left" class="m-grid__item	m-aside-left  m-aside-left--skin-dark "> 
+      <!-- BEGIN: Aside Menu -->
+      <div 
+		id="m_ver_menu" 
+		class="m-aside-menu  m-aside-menu--skin-dark m-aside-menu--submenu-skin-dark " 
+		m-menu-vertical="1"
+		 m-menu-scrollable="1" m-menu-dropdown-timeout="500"  
+		>
+        <ul class="m-menu__nav ">
+          <li class="m-menu__section m-menu__section--first">
+            <h4 class="m-menu__section-text">Centova Cast</h4>
+            <i class="m-menu__section-icon flaticon-more-v2"></i> </li>
+          {$prenavhtml}
+          {loop $heading=$menu}
+          <li class="m-menu__item m-menu__item--submen ifconfig-{$heading.icon}" aria-haspopup="true" m-menu-submenu-toggle="hover"> <a href="javascript:;" class="m-menu__link m-menu__toggle"><span class="m-menu__item-here"></span><i class="m-menu__link-icon icon-{$heading.icon}"></i><span class="m-menu__link-text">{$heading.name}</span><i class="m-menu__ver-arrow la la-angle-right"></i></a>
+            <div class="m-menu__submenu"><span class="m-menu__arrow"></span>
+              <ul class="m-menu__subnav">
+                {subloop $item=$heading.items}
+                <li class="m-menu__item" aria-haspopup="true" ><a href="{$item.url}" {if $item.target} target="{$item.target|htmlentities}"{/if}{if $item.confirm} onclick="return confirm('{$item.confirm|jsescape}')"{/if} class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">{$item.name}</span></a> {/subloop}
+              </ul>
+            </div>
+          </li>
+          {/loop}
+          {$leftcolumnhtml}
+          <li class="m-menu__section ">
+            <h4 class="m-menu__section-text">Externe Ressourcen</h4>
+            <i class="m-menu__section-icon flaticon-more-v2"></i> </li>
+          <li class="m-menu__item" aria-haspopup="true" m-menu-link-redirect="1"><a href="https://www.streampanel.net/blog/" target="_blank" class="m-menu__link "><span class="m-menu__item-here"></span><i class="m-menu__link-icon icon-news"></i><span class="m-menu__link-text">STREAMPANEL Neuigkeiten</span></a></li>
+          <li class="m-menu__item" aria-haspopup="true" m-menu-link-redirect="1"><a href="https://www.streampanel.net/faq/" target="_blank" class="m-menu__link "><span class="m-menu__item-here"></span><i class="m-menu__link-icon icon-faq"></i><span class="m-menu__link-text">Fragen und Antworten</span></a></li>
+          <!--<li class="m-menu__item" aria-haspopup="true" m-menu-link-redirect="1"><a href="https://www.streampanel.net/forum/" target="_blank" class="m-menu__link "><span class="m-menu__item-here"></span><i class="m-menu__link-icon icon-forumsalt"></i><span class="m-menu__link-text">{$LANG.streampanel_navforum}</span></a></li>-->
+        </ul>
+      </div>
+      <!-- END: Aside Menu --> 
+    </div>
+    <!-- END: Left Aside -->
+    <div class="m-grid__item m-grid__item--fluid m-wrapper">
+      <div id="topbar"> {include "topbar.tpl"} </div>
+      <div id="header" class="hide-centova-header">
+        <div id="header_content"> {if $section.icon}<img id="section_icon" src="../theme/images/nav/{$section.icon}.png" alt="{$section.title|htmlentities}"/>{/if}
+          <h1>{$section.title|htmlentities}</h1>
+          <h2>{$section.subtitle|htmlentities}</h2>
+        </div>
+        <div id="header_right"> {$headerhtml} </div>
+      </div>
+      
+      <!-- BEGIN: Subheader -->
+      <div class="m-subheader">
+        <div class="d-flex align-items-center">
+          <div class="mr-auto">
+            <h1 class="m-subheader__title ">{$subsection.title}</h1>
+            <br/>
+            <small>{$subsection.subtitle}</small> </div>
+        </div>
+      </div>
+      <!-- END: Subheader -->
+      <div class="m-content"> 
+        <!-- Do not remove this -->
+        <div id="logobar"></div>
+        {check $rawcontent>0}
+        {$content}
+        {halt_parser}
+        {/check}
+        {$preamble}
+        {$content} </div>
+    </div>
+  </div>
+  <!-- end:: Body --> 
+  <!-- begin::Footer --> 
+  <!--<footer class="m-grid__item m-footer ">
+  <div class="m-container m-container--fluid m-container--full-height m-page__container">
+    <div class="m-stack m-stack--flex-tablet-and-mobile m-stack--ver m-stack--desktop">
+      <div class="m-stack__item m-stack__item--left m-stack__item--middle m-stack__item--last"> <span class="m-footer__copyright"> 2013 - {$date_year} &copy; <a href="https://www.streampanel.net/" target="_blank" class="m-link">STREAMPANEL</a> </span> </div>
+      <div class="m-stack__item m-stack__item--right m-stack__item--middle m-stack__item--first">
+        <ul class="m-footer__nav m-nav m-nav--inline m--pull-right">
+          <li class="m-nav__item"> <a href="https://www.streampanel.net/kontakt/agb/" target="_blank" class="m-nav__link"> <span class="m-nav__link-text">{$LANG.streampanel_agbshort}</span> </a> </li>
+          <li class="m-nav__item"> <a href="https://www.streampanel.net/kontakt/datenschutz/" target="_blank" class="m-nav__link"> <span class="m-nav__link-text">{$LANG.streampanel_privacy}</span> </a> </li>
+          <li class="m-nav__item"> <a href="https://www.streampanel.net/kontakt/widerrufsrecht/" target="_blank" class="m-nav__link"> <span class="m-nav__link-text">{$LANG.streampanel_cancelagreement}</span> </a> </li>
+          <li class="m-nav__item"> <a href="https://www.streampanel.net/kontakt/cookies/" target="_blank" class="m-nav__link"> <span class="m-nav__link-text">{$LANG.streampanel_cookiesettings}</span> </a> </li>
+          <li class="m-nav__item"> <a href="https://www.streampanel.net/kontakt/impressum/" target="_blank" class="m-nav__link"> <span class="m-nav__link-text">{$LANG.streampanel_imprint}</span> </a> </li>
+          <li class="m-nav__item m-nav__item"> <a href="{$WEB_ROOT}/supporttickets.php" class="m-nav__link" data-toggle="m-tooltip" title="{$LANG.streampanel_streampanel_support}" data-placement="left"> <i class="m-nav__link-icon icon-support m--icon-font-size-lg3"></i> </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>--> 
+  <!-- end::Footer --> 
 </div>
+<!-- end:: Page --> 
+<!-- begin::Scroll Top -->
+<div id="m_scroll_top" class="m-scroll-top"> <i class="la la-arrow-up"></i> </div>
+<!-- end::Scroll Top --> 
 
-<div id="logobar">
-	<div id="notifyanchor" style="float: right; width: 1px; height: 1px; margin-right: 10px"></div>
-	{if $logobarhtml!=""}<div style="float: right">
-		{$logobarhtml}
-	</div>{/if}
-    {if $resellerlogo}<img src="/static/resellers/{$resellerlogo}/logofile.jpg" alt="Centova Cast"/>
-    {else}<img src="https://cassets.streampanel.cloud/logo/182x51.png" alt="STREAMPANEL Logo"/>{/if}
-</div>
-
-{check $rawcontent>0}
-	<div id="rawcontent">
-	{$content}
-	</div>
-
-	</body>
-	</html>
-
-	{halt_parser}
-{/check}
-
-<div id="header">
-	<div id="header_content">
-		{if $section.icon}<img id="section_icon" src="../theme/images/nav/{$section.icon}.png" alt="{$section.title|htmlentities}"/>{/if}
-		<h1>{$section.title|htmlentities}</h1>
-		<h2>{$section.subtitle|htmlentities}</h2>
-	</div>
-	<div id="header_right">
-		{$headerhtml}
-	</div>
-</div>
-
-<div style="clear: both"></div>
-
-{$preamble}
-
-<div id="leftcolumn">
-
-	{$prenavhtml}
-
-	<div id="navigation">
-		<div id="navigation-content">
-			{loop $heading=$menu}
-			<div class="navigation-section{if $_loop.last} last{/if}">
-				<img class="nav-section-icon" src="../theme/images/nav/{$heading.icon}.png" alt="{$heading.name}" />
-				<div class="nav-section-content">
-					{$heading.prehtml}
-					<h3 onclick="window.location='{$heading.url}'">{$heading.name}</h3>
-					<div class="navigation-links">
-						{subloop $item=$heading.items}
-						<a href="{$item.url}" title="{$item.title}"{if $item.target} target="{$item.target|htmlentities}"{/if}{if $item.confirm} onclick="return confirm('{$item.confirm|jsescape}')"{/if}>{$item.name}</a>{if $_loop.last==0} | {/if}
-						{/subloop}{$heading.posthtml}
-					</div>
-				</div>
-			</div>
-			{/loop}
-			<div class="navigation-end"></div>
-			{check $menu|count<3}<div style="height: {if $menu|count==1}120px{else}50px{/if}"></div>{/check}
-		</div>
-	</div>
-
-	{$leftcolumnhtml}
-</div>
-
-<div id="maincontent">
-	<div class="content-top">
-		<div class="content-top-inner">
-			
-			<div id="heading">
-				<div id="heading_content">
-					{if $subsection.icon}<img id="heading_icon" src="../theme/images/subsections/{$subsection.icon}.png" alt="{$subsection.title|htmlentities}" />{/if}
-					<h1>{$subsection.title}</h1>
-					<h2>{$subsection.subtitle}</h2>
-				</div>
-				<div id="heading_right">
-					{$headinghtml}
-				</div>
-			</div>
-			
-		</div>
-	</div>
-	
-	<div class="content-container">
-		<div class="content-container-inner">
-			<div class="content-container-innermost">
-				<div class="content-area">
-					{$content}
-				</div>
-			<div>
-		</div>
-	</div>
-	
-	<div class="content-bottom">
-		<div class="content-bottom-inner">
-		</div>
-	</div>
-	
-</div>
-
-<div id="footer">
-	<div id="footer_content">
-	{="Logged in as: %s",$loginname|htmlentities} <span class="sep">|</span> Centova Cast v{$_CONSTANTS.PRODUCT_VERSION} <span class="sep">|</span> {="Copyright"} 2006-{$_CONSTANTS.PRODUCT_YEAR}, <a href="http://www.centova.com" target="_blank" rel="noopener">Centova Technologies Inc.</a> <span class="sep">|</span> <a href="https://www.streampanel.net/cloud/" title="STREAMPANEL Cloud" target="_blank" rel="noopener">STREAMPANEL Cloud</a> <span class="sep">|</span> <a href="https://www.streampanel.net/kb/centova-cast-wie-fange-ich-an/" title="Wie fange ich an?" target="_blank" rel="noopener">Wie fange ich an?</a> <span class="sep">|</span> <a href="https://www.streampanel.net/kontakt/datenschutz/" title="Datenschutz" target="_blank" rel="noopener">Datenschutz</a> <span class="sep">|</span> <a href="https://www.streampanel.net/kontakt/cookies/" target="_blank" rel="noopener">Cookie-Einstellungen</a> <span class="sep">|</span> <a href="https://www.streampanel.net/kontakt/impressum/" title="Impressum" target="_blank" rel="noopener">Impressum</a><br><br>
-	</div>
-</div>
-
-<script type="text/javascript">
-if (document.cookie.indexOf('cookie_consent_level=functional') > -1 ) {
-var js_script = document.createElement('script');
-js_script.type = "text/javascript";
-js_script.id = "05d0a348b55f087fd24e61004a977853";
-js_script.src = "https://lz.streampanel.net/script.php?id=05d0a348b55f087fd24e61004a977853";
-js_script.async = true;
-document.getElementsByTagName('head')[0].appendChild(js_script);
-} else if (document.cookie.indexOf('cookie_consent_level=tracking') > -1 ) {
-var js_script = document.createElement('script');
-js_script.type = "text/javascript";
-js_script.id = "05d0a348b55f087fd24e61004a977853";
-js_script.src = "https://lz.streampanel.net/script.php?id=05d0a348b55f087fd24e61004a977853";
-js_script.async = true;
-document.getElementsByTagName('head')[0].appendChild(js_script);
-} else if (document.cookie.indexOf('cookie_consent_level=targeting') > -1 ) {
-var js_script = document.createElement('script');
-js_script.type = "text/javascript";
-js_script.id = "05d0a348b55f087fd24e61004a977853";
-js_script.src = "https://lz.streampanel.net/script.php?id=05d0a348b55f087fd24e61004a977853";
-js_script.async = true;
-document.getElementsByTagName('head')[0].appendChild(js_script);
-} else {
-// To activate STREAMPANEL Livesupport, change your cookie settings.
-}
-</script>
+<!--begin::Page Scripts --> 
+<!--end::Page Scripts -->
 </body>
+<!-- end::Body -->
 </html>
