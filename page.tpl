@@ -170,64 +170,65 @@ body {
 $(document).ready(function() {
     var url = document.location.href;
 
-    if (url === document.location.href + '?page=library'){
+    if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=library'){
         $("body").addClass("m-aside-left--hide");
 		$("div.m-subheader").addClass("d-none");
 		$("div.hide-centova-header").addClass("d-none");
 		$("div.m-content").removeClass();
 		$("li.ifconfig-autodj").addClass("m-menu__item--open m-menu__item--active");
     }
-    else if (url === document.location.href + '?page=filemanager') {
+    else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=filemanager') {
         $("body").addClass("m-aside-left--hide");
 		$("div.m-subheader").addClass("d-none");
 		$("div.hide-centova-header").addClass("d-none");
 		$("div.m-content").removeClass();
 		$("li.ifconfig-autodj").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === document.location.href) {
+	else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php') {
 		$("li.ifconfig-home").addClass("m-menu__item--open m-menu__item--active");
 		$("ul.m-menu__nav li:ifconfig-home(2)").addClass("m-menu__item--active");
     }
-	else if (url === document.location.href + '?page=quicklinks') {
+	else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=quicklinks') {
 		$("li.ifconfig-home").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === document.location.href + '?page=configure') {
+	else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=configure') {
 		$("li.ifconfig-settings").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === document.location.href + '?page=widgets') {
+	else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=widgets') {
 		$("li.ifconfig-settings").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === document.location.href + '?page=djaccounts') {
+	else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=djaccounts' || url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=djaccounts&action=add' || url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=djaccounts&action=edit&id=' + url.substring(url.lastIndexOf('=') + 1)) {
 		$("li.ifconfig-settings").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === document.location.href + '?page=statistics') {
+	else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=statistics') {
 		$("li.ifconfig-statistics").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === document.location.href + '?page=reportdownloads') {
+	else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=reportdownloads') {
 		$("li.ifconfig-statistics").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === document.location.href + '?page=livestats') {
+	else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=livestats') {
 		$("li.ifconfig-statistics").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === document.location.href + '?page=logs') {
+	else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=logs') {
 		$("li.ifconfig-statistics").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === document.location.href + '?page=control&action=stop') {
+	else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=control&action=stop') {
 		$("li.ifconfig-server").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === document.location.href + '?page=control&action=restart') {
+	else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=control&action=restart') {
 		$("li.ifconfig-server").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === document.location.href + '?page=control&action=start') {
+	else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=control&action=start') {
 		$("li.ifconfig-server").addClass("m-menu__item--open m-menu__item--active");
     }
-	else if (url === document.location.href + '?page=playlists') {
+	else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=playlists' || url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=playlists&action=add' || url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=playlists&action=edit&id=' + url.substring(url.lastIndexOf('=') + 1)) {
 		$("li.ifconfig-autodj").addClass("m-menu__item--open m-menu__item--active");
     }
 	else {
         $("body").addClass("");
     }
-}); 
+});
+console.log (document.location);
 </script>
     <!--end::Custom Script -->
 
