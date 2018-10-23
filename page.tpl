@@ -137,7 +137,7 @@ body {
 }
 </style>
 {/check}
-    <style type="text/css">
+<style type="text/css">
 #logobar {
 	background-image: none;
 	background-color: #13223C !important;
@@ -145,10 +145,10 @@ body {
 	color: #FFF;
 }
 </style>
-    <!--end::Custom Page Scripts -->
+<!--end::Custom Page Scripts -->
 
-    <!--begin::Custom Style -->
-    <style type="text/css">
+<!--begin::Custom Style -->
+<style type="text/css">
 #logobar {
 	height: 0px !important;
 	visibility: hidden !important;
@@ -162,10 +162,13 @@ body {
 #client-audio {
 	visibility: hidden !important;
 }
+.m-header-search .m-header-search__form {
+    float: left !important;
+}
 </style>
-    <!--end::Custom Style -->
+<!--end::Custom Style -->
 
-    <!--begin::Custom Script -->
+<!--begin::Custom Script -->
 <script>
 $(document).ready(function() {
     var url = document.location.href;
@@ -230,16 +233,16 @@ $(document).ready(function() {
 });
 console.log (document.location);
 </script>
-    <!--end::Custom Script -->
+<!--end::Custom Script -->
 
-    <!--begin::Matomo Tag Manager -->
-    <script type="text/javascript">
+<!--begin::Matomo Tag Manager -->
+<script type="text/javascript">
 var _mtm = _mtm || [];
 _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
 var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
 g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampanel.net/js/container_KVNJAR2p.js'; s.parentNode.insertBefore(g,s);
 </script>
-    <!--end::Matomo Tag Manager -->
+<!--end::Matomo Tag Manager -->
 </head><!-- end::Head -->
 <!-- begin::Body -->
 <body class="m-page--fluid m--skin- m-content--skin-light2 m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--fixed m-aside-left--offcanvas m-aside-right--enabled m-footer--push m-aside--offcanvas-default">
@@ -278,7 +281,17 @@ g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampa
             </ul>
           </div>
           <!-- END: Horizontal Menu --> <!-- BEGIN: Topbar -->
-          <div id="m_header_topbar" class="m-topbar  m-stack m-stack--ver m-stack--general"> </div>
+          <div id="m_header_topbar" class="m-topbar  m-stack m-stack--ver m-stack--general"> 
+            <!--BEGIN: Search Form -->
+            <div class="m-stack__item m-stack__item--middle m-header-search m-header-search--expandable m-header-search--skin-light">
+              <form target="_blank" class="m-header-search__form" method="post" onsubmit="window.location = 'https://www.streampanel.net/?s=' + search.value; return false;">
+                <div class="m-header-search__wrapper"> <span class="m-header-search__icon-search" id="m_quicksearch_search"> <i class="flaticon-search"></i> </span> <span class="m-header-search__input-wrapper">
+                  <input autocomplete="off" type="text" class="m-header-search__input" placeholder="FAQ durchsuchen" id="search">
+                  </span> <span class="m-header-search__icon-close" id="m_quicksearch_close"> <i class="la la-remove"></i> </span> <span class="m-header-search__icon-cancel" id="m_quicksearch_cancel"> <i class="la la-remove"></i> </span> </div>
+              </form>
+            </div>
+            <!--END: Search Form --> 
+          </div>
           <!-- END: Topbar --> 
         </div>
       </div>
