@@ -277,7 +277,40 @@ g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampa
           <button class="m-aside-header-menu-mobile-close  m-aside-header-menu-mobile-close--skin-dark " id="m_aside_header_menu_mobile_close_btn"><i class="la la-close"></i></button>
           <div id="m_header_menu" class="m-header-menu m-aside-header-menu-mobile m-aside-header-menu-mobile--offcanvas  m-header-menu--skin-dark m-header-menu--submenu-skin-light m-aside-header-menu-mobile--skin-dark m-aside-header-menu-mobile--submenu-skin-light "  >
             <ul class="m-menu__nav ">
-              <!--<li class="m-menu__item  m-menu__item--submenu m-menu__item--rel"  m-menu-submenu-toggle="click" m-menu-link-redirect="1" aria-haspopup="true"><a href="https://www.streampanel.net/bb/" target="_blank" class="m-menu__link"><i class="m-menu__link-icon icon-forumsalt"></i><span class="m-menu__link-text">STREAMPANEL Forum</span></a> </li>-->
+              <li class="m-menu__item  m-menu__item--submenu m-menu__item--rel"  m-menu-submenu-toggle="click" m-menu-link-redirect="1" aria-haspopup="true"><a  href="javascript:;" class="m-menu__link m-menu__toggle"><i class="m-menu__link-icon fas fa-stream"></i><span class="m-menu__link-text">SHOUTcast Tools</span><i class="m-menu__hor-arrow la la-angle-down"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
+                <div class="m-menu__submenu  m-menu__submenu--fixed m-menu__submenu--left" style="width:1000px">
+                  <div class="m-menu__subnav">
+                    <ul class="m-menu__content">
+                      <li class="m-menu__item">
+                        <h3 class="m-menu__heading m-menu__toggle"><span class="m-menu__link-text">SHOUTcast Tools</span><i class="m-menu__ver-arrow la la-angle-right"></i></h3>
+                        <ul class="m-menu__inner">
+                          <li class="m-menu__item"m-menu-link-redirect="1" aria-haspopup="true"><a  href="https://www.shoutcast-tools.de" target="_blank" class="m-menu__link"><i class="m-menu__link-icon fa fa-external-link-alt"></i><span class="m-menu__link-text">SHOUTcast Tools (DE)</span></a></li>
+                          <li class="m-menu__item"m-menu-link-redirect="1" aria-haspopup="true"><a  href="https://www.shoutcast-tools.com" target="_blank" class="m-menu__link"><i class="m-menu__link-icon fa fa-external-link-alt"></i><span class="m-menu__link-text">SHOUTcast Tools (EN)</span></a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="m-menu__item  m-menu__item--submenu m-menu__item--rel"  m-menu-submenu-toggle="click" m-menu-link-redirect="1" aria-haspopup="true"><a href="https://www.webradiotop100.de/" target="_blank" class="m-menu__link"><i class="m-menu__link-icon fas fa-broadcast-tower"></i><span class="m-menu__link-text">Webradio TOP 100 (DE)</span></a> </li>
+              <li class="m-menu__item  m-menu__item--submenu m-menu__item--rel"  m-menu-submenu-toggle="click" m-menu-link-redirect="1" aria-haspopup="true"><a  href="javascript:;" class="m-menu__link m-menu__toggle"><i class="m-menu__link-icon fas fa-box-open"></i><span class="m-menu__link-text">STREAMPANEL Erweiterungen</span><i class="m-menu__hor-arrow la la-angle-down"></i><i class="m-menu__ver-arrow la la-angle-right"></i></a>
+                <div class="m-menu__submenu  m-menu__submenu--fixed m-menu__submenu--left" style="width:1000px">
+                  <div class="m-menu__subnav">
+                    <ul class="m-menu__content">
+                      <li class="m-menu__item">
+                        <h3 class="m-menu__heading m-menu__toggle"><span class="m-menu__link-text">Webradio Erweiterungen</span><i class="m-menu__ver-arrow la la-angle-right"></i></h3>
+                        <ul class="m-menu__inner">
+                          <li class="m-menu__item"m-menu-link-redirect="1" aria-haspopup="true"><a  href="https://www.streampanel.net/mobile/" target="_blank" class="m-menu__link"><i class="m-menu__link-icon fas fa-mobile"></i><span class="m-menu__link-text">STREAMPANEL Mobile</span></a></li>
+                          <li class="m-menu__item"m-menu-link-redirect="1" aria-haspopup="true"><a  href="https://www.streampanel.net/apps/" target="_blank" class="m-menu__link"><i class="m-menu__link-icon fab fa-android"></i><span class="m-menu__link-text">STREAMPANEL Apps</span></a></li>
+                          <li class="m-menu__item"m-menu-link-redirect="1" aria-haspopup="true"><a  href="https://www.streampanel.net/safeguard/" target="_blank" class="m-menu__link"><i class="m-menu__link-icon fas fa-lock"></i><span class="m-menu__link-text">STREAMPANEL Safeguard</span></a></li>
+                          <li class="m-menu__item"m-menu-link-redirect="1" aria-haspopup="true"><a  href="https://www.streampanel.net/content-syndication/" target="_blank" class="m-menu__link"><i class="m-menu__link-icon fas fa-retweet"></i><span class="m-menu__link-text">Content-Syndicationen</span></a></li>
+                          <li class="m-menu__item"m-menu-link-redirect="1" aria-haspopup="true"><a  href="https://www.streampanel.net/zeitpunktgenaue-inhalte/" target="_blank" class="m-menu__link"><i class="m-menu__link-icon fas fa-clock"></i><span class="m-menu__link-text">Zeitpunktgenaue Inhalte</span></a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
           <!-- END: Horizontal Menu --> <!-- BEGIN: Topbar -->
