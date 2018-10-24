@@ -353,8 +353,10 @@ g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampa
           <li class="m-menu__item m-menu__item--submen ifconfig-{$heading.icon}" aria-haspopup="true" m-menu-submenu-toggle="hover"> <a href="javascript:;" class="m-menu__link m-menu__toggle"><span class="m-menu__item-here"></span><i class="m-menu__link-icon icon-{$heading.icon}"></i><span class="m-menu__link-text">{$heading.name}</span><i class="m-menu__ver-arrow la la-angle-right"></i></a>
             <div class="m-menu__submenu"><span class="m-menu__arrow"></span>
               <ul class="m-menu__subnav">
+				{$heading.prehtml}
                 {subloop $item=$heading.items}
-                <li class="m-menu__item" aria-haspopup="true" ><a href="{$item.url}" {if $item.target} target="{$item.target|htmlentities}"{/if}{if $item.confirm} onclick="return confirm('{$item.confirm|jsescape}')"{/if} class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">{$item.name}</span></a> {/subloop}
+                <li class="m-menu__item" aria-haspopup="true" ><a href="{$item.url}" {if $item.target} target="{$item.target|htmlentities}"{/if}{if $item.confirm} onclick="return confirm('{$item.confirm|jsescape}')"{/if} class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">{$item.name}</span></a></li>{/subloop}
+				{$heading.posthtml}
               </ul>
             </div>
           </li>
