@@ -316,14 +316,36 @@ g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampa
           <!-- END: Horizontal Menu --> <!-- BEGIN: Topbar -->
           <div id="m_header_topbar" class="m-topbar  m-stack m-stack--ver m-stack--general"> 
             <!--BEGIN: Search Form -->
-            <div class="m-stack__item m-stack__item--middle m-header-search m-header-search--expandable m-header-search--skin-light">
+            <div class="m-stack__item m-stack__item--middle m-header-search m-header-search--skin-light">
               <form target="_blank" class="m-header-search__form" method="post" onsubmit="window.location = 'https://www.streampanel.net/?s=' + search.value; return false;">
                 <div class="m-header-search__wrapper"> <span class="m-header-search__icon-search" id="m_quicksearch_search"> <i class="flaticon-search"></i> </span> <span class="m-header-search__input-wrapper">
                   <input autocomplete="off" type="text" class="m-header-search__input" placeholder="FAQ durchsuchen" id="search">
                   </span> <span class="m-header-search__icon-close" id="m_quicksearch_close"> <i class="la la-remove"></i> </span> <span class="m-header-search__icon-cancel" id="m_quicksearch_cancel"> <i class="la la-remove"></i> </span> </div>
               </form>
             </div>
-            <!--END: Search Form --> 
+            <!--END: Search Form -->
+            
+            <div class="m-stack__item m-topbar__nav-wrapper">
+              <ul class="m-topbar__nav m-nav m-nav--inline">
+                <li class="m-nav__item m-topbar__quick-actions m-dropdown m-dropdown--skin-light m-dropdown--large m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push m-dropdown--mobile-full-width" m-dropdown-toggle="click" aria-expanded="true"> <a href="#" class="m-nav__link m-dropdown__toggle"> <span class="m-nav__link-icon"> <span class="m-nav__link-icon-wrapper"><i class="flaticon-profile-1"></i></span> </span> </a>
+                  <div class="m-dropdown__wrapper" style="z-index: 101;"> <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust" style="left: auto;"></span>
+                    <div class="m-dropdown__inner">
+                      <div class="m-dropdown__header m--align-center"> <span class="m-dropdown__header-title">Centova Cast</span> <span class="m-dropdown__header-subtitle">Hilfe</span></div>
+                      <div class="m-dropdown__body m-dropdown__body--paddingless">
+                        <div class="m-dropdown__content">
+                          <div class="m-scrollable" data-scrollable="false" data-height="380" data-mobile-height="200">
+                            <div class="m-nav-grid m-nav-grid--skin-light">
+                              <div class="m-nav-grid__row"> <a href="https://www.streampanel.net/kb/centova-cast-wie-fange-ich-an/" target="_blank" class="m-nav-grid__item"> <i class="m-nav-grid__icon flaticon-file"></i> <span class="m-nav-grid__text">Ersteinrichtung</span> </a> <a href="#" class="m-nav-grid__item"> <i class="m-nav-grid__icon flaticon-time"></i> <span class="m-nav-grid__text">-</span> </a> </div>
+                              <div class="m-nav-grid__row"> <a href="#" class="m-nav-grid__item"> <i class="m-nav-grid__icon flaticon-folder"></i> <span class="m-nav-grid__text">-</span> </a> <a href="https://login.streampanel.net/submitticket.php" target="_blank" class="m-nav-grid__item"> <i class="m-nav-grid__icon flaticon-mail"></i> <span class="m-nav-grid__text">Support kontaktieren</span> </a> </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
           <!-- END: Topbar --> 
         </div>
@@ -353,10 +375,11 @@ g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampa
           <li class="m-menu__item m-menu__item--submen ifconfig-{$heading.icon}" aria-haspopup="true" m-menu-submenu-toggle="hover"> <a href="javascript:;" class="m-menu__link m-menu__toggle"><span class="m-menu__item-here"></span><i class="m-menu__link-icon icon-{$heading.icon}"></i><span class="m-menu__link-text">{$heading.name}</span><i class="m-menu__ver-arrow la la-angle-right"></i></a>
             <div class="m-menu__submenu"><span class="m-menu__arrow"></span>
               <ul class="m-menu__subnav">
-				{$heading.prehtml}
+                {$heading.prehtml}
                 {subloop $item=$heading.items}
-                <li class="m-menu__item" aria-haspopup="true" ><a href="{$item.url}" {if $item.target} target="{$item.target|htmlentities}"{/if}{if $item.confirm} onclick="return confirm('{$item.confirm|jsescape}')"{/if} class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">{$item.name}</span></a></li>{/subloop}
-				{$heading.posthtml}
+                <li class="m-menu__item" aria-haspopup="true" ><a href="{$item.url}" {if $item.target} target="{$item.target|htmlentities}"{/if}{if $item.confirm} onclick="return confirm('{$item.confirm|jsescape}')"{/if} class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">{$item.name}</span></a></li>
+                {/subloop}
+                {$heading.posthtml}
               </ul>
             </div>
           </li>
@@ -390,6 +413,7 @@ g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampa
             <h1 class="m-subheader__title ">{$subsection.title}</h1>
             <br/>
             <small>{$subsection.subtitle}</small> </div>
+          <div id="header_right"> {$headinghtml} </div>
         </div>
       </div>
       <!-- END: Subheader -->
