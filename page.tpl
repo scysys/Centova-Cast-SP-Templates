@@ -390,6 +390,7 @@ g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampa
             <i class="m-menu__section-icon flaticon-more-v2"></i> </li>
           <li class="m-menu__item" aria-haspopup="true" m-menu-link-redirect="1"><a href="https://www.streampanel.net/blog/" target="_blank" class="m-menu__link "><span class="m-menu__item-here"></span><i class="m-menu__link-icon icon-news"></i><span class="m-menu__link-text">STREAMPANEL Neuigkeiten</span></a></li>
           <li class="m-menu__item" aria-haspopup="true" m-menu-link-redirect="1"><a href="https://www.streampanel.net/faq/" target="_blank" class="m-menu__link "><span class="m-menu__item-here"></span><i class="m-menu__link-icon icon-faq"></i><span class="m-menu__link-text">Fragen und Antworten</span></a></li>
+          <li class="m-menu__item" aria-haspopup="true" m-menu-link-redirect="1"><a href="https://login.streampanel.net/submitticket.php" target="_blank" class="m-menu__link "><span class="m-menu__item-here"></span><i class="m-menu__link-icon icon-support"></i><span class="m-menu__link-text">Support schreiben</span></a></li>
           <!--<li class="m-menu__item" aria-haspopup="true" m-menu-link-redirect="1"><a href="https://www.streampanel.net/forum/" target="_blank" class="m-menu__link "><span class="m-menu__item-here"></span><i class="m-menu__link-icon icon-forumsalt"></i><span class="m-menu__link-text">{$LANG.streampanel_navforum}</span></a></li>-->
         </ul>
       </div>
