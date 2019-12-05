@@ -9,7 +9,7 @@ Sollten Sie nicht zurecht kommen, <a href="https://login.streampanel.net/submitt
 	<br />
 	{="Your streaming server index page"}: <a target="_blank" rel="noopener" href="{$serveradminpage}">{$serveradminpage}</a>
 	<br /><br /><hr/><br />
-	SSL-Streaming-URL: <a target="_blank" rel="noopener" href="https://nelly.streampanel.net/mp3.php?url={$serverhostname|htmlentities}:{$account.port|add:2|htmlentities}&bitrate={$account.maxbitrate|htmlentities}&mountpoint=stream">https://stream.streampanel.net/mp3.php?url={$serverhostname|htmlentities}:{$account.port|add:2|htmlentities}&amp;bitrate={$account.maxbitrate|htmlentities}&amp;mountpoint=stream</a>
+	SSL-Streaming-URL: <a target="_blank" rel="noopener" href="https://nelly.streampanel.net/mp3.php?url={$serverhostname|htmlentities}:{$account.port|htmlentities}&bitrate={$account.maxbitrate|htmlentities}&mountpoint=stream">https://nelly.streampanel.net/mp3.php?url={$serverhostname|htmlentities}:{$account.port|htmlentities}&amp;bitrate={$account.maxbitrate|htmlentities}&amp;mountpoint=stream</a>
 	<br />
 	Wissenswertes zum SSL-Streaming: <a target="_blank" rel="noopener" href="https://www.streampanel.net/kb/ssl-streaming-shoutcast-v1-v2-icecast-v2/">https://www.streampanel.net/kb/ssl-streaming-shoutcast-v1-v2-icecast-v2/</a>
 {/if}
