@@ -19,6 +19,7 @@ Für Eintragungen des Radios auf fremden Plattformen, lesen Sie folgendes: <a ta
 {/if}
 {/box}
 
+{box title="Tune-In Links (HTTP-Streaming)"}
 	<table cellsacing="0" cellpadding="0" border="0">
 	{loop $player=$players}
 	<tr>
