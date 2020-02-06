@@ -9,7 +9,9 @@ Sollten Sie nicht zurecht kommen, <a href="https://login.streampanel.net/submitt
 	<br />
 	{="Your streaming server index page"}: <a target="_blank" rel="noopener" href="{$serveradminpage}">{$serveradminpage}</a>
 	<br /><br /><hr/><br />
-	SSL-Streaming-URL: https://nelly.streampanel.net/spradio/index.php?q=http://<font color="red">hostname</font>.streampanel.cloud:{$account.port|htmlentities}/stream
+	Natives SSL: https://<font color="red">hostname</font>.streampanel.cloud:{$account.port|htmlentities}/stream
+	<br />
+	SSL-Proxy: https://nelly.streampanel.net/spradio/index.php?q=http://<font color="red">hostname</font>.streampanel.cloud:{$account.port|htmlentities}/stream
 	<br />
 	Wissenswertes zum SSL-Streaming: <a target="_blank" rel="noopener" href="https://www.streampanel.net/kb/ssl-streaming-shoutcast-v1-v2-icecast-v2/">https://www.streampanel.net/kb/ssl-streaming-shoutcast-v1-v2-icecast-v2/</a>
 	<br /><br /><hr/><br />
@@ -17,7 +19,6 @@ Für Eintragungen des Radios auf fremden Plattformen, lesen Sie folgendes: <a ta
 {/if}
 {/box}
 
-{box title="Tune-In Links (HTTP-Streaming)"}
 	<table cellsacing="0" cellpadding="0" border="0">
 	{loop $player=$players}
 	<tr>
