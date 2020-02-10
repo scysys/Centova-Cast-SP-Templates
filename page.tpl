@@ -251,7 +251,7 @@ g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampa
 <div class="m-grid m-grid--hor m-grid--root m-page"> 
   
   <!-- BEGIN: Header -->
-  <header id="m_header" class="m-grid__item m-header"m-minimize-offset="200" m-minimize-mobile-offset="200" >
+  <header id="m_header" class="m-grid__item m-header" m-minimize-offset="200" m-minimize-mobile-offset="200" >
     <div class="m-container m-container--fluid m-container--full-height">
       <div class="m-stack m-stack--ver m-stack--desktop"> 
         <!-- BEGIN: Brand -->
@@ -284,8 +284,8 @@ g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampa
                       <li class="m-menu__item">
                         <h3 class="m-menu__heading m-menu__toggle"><span class="m-menu__link-text">SHOUTcast Tools</span><i class="m-menu__ver-arrow la la-angle-right"></i></h3>
                         <ul class="m-menu__inner">
-                          <li class="m-menu__item"m-menu-link-redirect="1" aria-haspopup="true"><a  href="https://www.shoutcast-tools.de" target="_blank" class="m-menu__link"><i class="m-menu__link-icon fa fa-external-link-alt"></i><span class="m-menu__link-text">SHOUTcast Tools (DE)</span></a></li>
-                          <li class="m-menu__item"m-menu-link-redirect="1" aria-haspopup="true"><a  href="https://www.shoutcast-tools.com" target="_blank" class="m-menu__link"><i class="m-menu__link-icon fa fa-external-link-alt"></i><span class="m-menu__link-text">SHOUTcast Tools (EN)</span></a></li>
+                          <li class="m-menu__item" m-menu-link-redirect="1" aria-haspopup="true"><a  href="https://www.shoutcast-tools.de" target="_blank" class="m-menu__link"><i class="m-menu__link-icon fa fa-external-link-alt"></i><span class="m-menu__link-text">SHOUTcast Tools (DE)</span></a></li>
+                          <li class="m-menu__item" m-menu-link-redirect="1" aria-haspopup="true"><a  href="https://www.shoutcast-tools.com" target="_blank" class="m-menu__link"><i class="m-menu__link-icon fa fa-external-link-alt"></i><span class="m-menu__link-text">SHOUTcast Tools (EN)</span></a></li>
                         </ul>
                       </li>
                     </ul>
@@ -300,11 +300,11 @@ g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampa
                       <li class="m-menu__item">
                         <h3 class="m-menu__heading m-menu__toggle"><span class="m-menu__link-text">Webradio Erweiterungen</span><i class="m-menu__ver-arrow la la-angle-right"></i></h3>
                         <ul class="m-menu__inner">
-                          <li class="m-menu__item"m-menu-link-redirect="1" aria-haspopup="true"><a  href="https://www.streampanel.net/mobile/" target="_blank" class="m-menu__link"><i class="m-menu__link-icon fas fa-mobile"></i><span class="m-menu__link-text">STREAMPANEL Mobile</span></a></li>
-                          <li class="m-menu__item"m-menu-link-redirect="1" aria-haspopup="true"><a  href="https://www.streampanel.net/apps/" target="_blank" class="m-menu__link"><i class="m-menu__link-icon fab fa-android"></i><span class="m-menu__link-text">STREAMPANEL Apps</span></a></li>
-                          <li class="m-menu__item"m-menu-link-redirect="1" aria-haspopup="true"><a  href="https://www.streampanel.net/safeguard/" target="_blank" class="m-menu__link"><i class="m-menu__link-icon fas fa-lock"></i><span class="m-menu__link-text">STREAMPANEL Safeguard</span></a></li>
-                          <li class="m-menu__item"m-menu-link-redirect="1" aria-haspopup="true"><a  href="https://www.streampanel.net/content-syndication/" target="_blank" class="m-menu__link"><i class="m-menu__link-icon fas fa-retweet"></i><span class="m-menu__link-text">Content-Syndicationen</span></a></li>
-                          <li class="m-menu__item"m-menu-link-redirect="1" aria-haspopup="true"><a  href="https://www.streampanel.net/zeitpunktgenaue-inhalte/" target="_blank" class="m-menu__link"><i class="m-menu__link-icon fas fa-clock"></i><span class="m-menu__link-text">Zeitpunktgenaue Inhalte</span></a></li>
+                          <li class="m-menu__item" m-menu-link-redirect="1" aria-haspopup="true"><a  href="https://www.streampanel.net/mobile/" target="_blank" class="m-menu__link"><i class="m-menu__link-icon fas fa-mobile"></i><span class="m-menu__link-text">STREAMPANEL Mobile</span></a></li>
+                          <li class="m-menu__item" m-menu-link-redirect="1" aria-haspopup="true"><a  href="https://www.streampanel.net/apps/" target="_blank" class="m-menu__link"><i class="m-menu__link-icon fab fa-android"></i><span class="m-menu__link-text">STREAMPANEL Apps</span></a></li>
+                          <li class="m-menu__item" m-menu-link-redirect="1" aria-haspopup="true"><a  href="https://www.streampanel.net/safeguard/" target="_blank" class="m-menu__link"><i class="m-menu__link-icon fas fa-lock"></i><span class="m-menu__link-text">STREAMPANEL Safeguard</span></a></li>
+                          <li class="m-menu__item" m-menu-link-redirect="1" aria-haspopup="true"><a  href="https://www.streampanel.net/content-syndication/" target="_blank" class="m-menu__link"><i class="m-menu__link-icon fas fa-retweet"></i><span class="m-menu__link-text">Content-Syndicationen</span></a></li>
+                          <li class="m-menu__item" m-menu-link-redirect="1" aria-haspopup="true"><a  href="https://www.streampanel.net/zeitpunktgenaue-inhalte/" target="_blank" class="m-menu__link"><i class="m-menu__link-icon fas fa-clock"></i><span class="m-menu__link-text">Zeitpunktgenaue Inhalte</span></a></li>
                         </ul>
                       </li>
                     </ul>
