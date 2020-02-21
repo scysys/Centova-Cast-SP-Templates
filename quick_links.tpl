@@ -10,7 +10,7 @@ Sollten Sie nicht zurecht kommen, <a href="https://login.streampanel.net/submitt
 {="Streamserver (IP-Address)"}: <a target="_blank" rel="noopener" href="{$serveradminpage}">{$serveradminpage}</a> <br />
 <br />
 {="Web player (Hostname / HTTP)"}: <a target="_blank" rel="noopener" href="http{$baseurl|substr:5:-9}cloud:{$account.port|htmlentities}/stream">http{$baseurl|substr:5:-9}cloud:{$account.port|htmlentities}/stream</a> <br/><br/>
-{="Web player (Hostname / HTTPS)"}: <a target="_blank" rel="noopener" href="{$baseurl|substr:0:-6}:{$account.port|htmlentities}/stream">{$baseurl|substr:0:-6}:{$account.port|htmlentities}/stream</a> <br/>{="On SHOUTcast V2 this is not working without an shoutcast.com premium account"}. {="On SHOUTcast V2 this is not working without an shoutcast.com premium account"}.<br><br/>
+{="Web player (Hostname / HTTPS)"}: <a target="_blank" rel="noopener" href="{$baseurl|substr:0:-6}:{$account.port|htmlentities}/stream">{$baseurl|substr:0:-6}:{$account.port|htmlentities}/stream</a> <br/>{="On SHOUTcast V2 this is not working without an shoutcast.com premium account"}. {="A little further down there is a solution for SHOUTcast V2 users without a premium account"}.<br><br/>
 {="Streamserver (IP-Address / HTTP)"}: <a target="_blank" rel="noopener" href="{$serveradminpage|substr:0:-11}/stream">{$serveradminpage|substr:0:-11}/stream</a> <br />
 <br />
 <strong>{="Solutions for old stream server or for SHOUTcast V2 without an shoutcast.com premium account"}</strong> <br>
