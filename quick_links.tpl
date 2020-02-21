@@ -9,11 +9,11 @@ Sollten Sie nicht zurecht kommen, <a href="https://login.streampanel.net/submitt
 {="Streamserver (Hostname)"}: <a target="_blank" rel="noopener" href="{$baseurl|substr:0:-6}:{$account.port|htmlentities}">{$baseurl|substr:0:-6}:{$account.port|htmlentities}</a> <br/>
 {="Streamserver (IP-Address)"}: <a target="_blank" rel="noopener" href="{$serveradminpage}">{$serveradminpage}</a> <br />
 <br />
-{="Web player (Hostname / HTTP)"}: <a target="_blank" rel="noopener" href="http{$baseurl|substr:5:-9}cloud:{$account.port|htmlentities}/stream">http{$baseurl|substr:5:-9}cloud:{$account.port|htmlentities}/stream</a> <br/>
-{="Web player (Hostname / HTTPS)"}: <a target="_blank" rel="noopener" href="{$baseurl|substr:0:-6}:{$account.port|htmlentities}/stream">{$baseurl|substr:0:-6}:{$account.port|htmlentities}/stream</a> <br>
+{="Web player (Hostname / HTTP)"}: <a target="_blank" rel="noopener" href="http{$baseurl|substr:5:-9}cloud:{$account.port|htmlentities}/stream">http{$baseurl|substr:5:-9}cloud:{$account.port|htmlentities}/stream</a> <br/><br/>
+{="Web player (Hostname / HTTPS)"}: <a target="_blank" rel="noopener" href="{$baseurl|substr:0:-6}:{$account.port|htmlentities}/stream">{$baseurl|substr:0:-6}:{$account.port|htmlentities}/stream</a> <br/>{="On SHOUTcast V2 this is not working without an shoutcast.com premium account"}. {="On SHOUTcast V2 this is not working without an shoutcast.com premium account"}.<br><br/>
 {="Streamserver (IP-Address / HTTP)"}: <a target="_blank" rel="noopener" href="{$serveradminpage|substr:0:-11}/stream">{$serveradminpage|substr:0:-11}/stream</a> <br />
 <br />
-<strong>{="Solutions for old stream server or for SHOUTcast V2 without an shoutcast.com premiumaccount"}</strong> <br>
+<strong>{="Solutions for old stream server or for SHOUTcast V2 without an shoutcast.com premium account"}</strong> <br>
 {="SSL Proxy for non supportet streamserver"}: <a target="_blank" rel="noopener" href="https://nelly.streampanel.net/spradio/index.php?q=http{$baseurl|substr:5:-9}cloud:{$account.port|htmlentities}/stream">https://nelly.streampanel.net/spradio/index.php?q=http{$baseurl|substr:5:-9}cloud:{$account.port|htmlentities}/stream</a> <font color="red">({="Without real visitor ip"})</font> <br>
 {="Learn more here"}: <a target="_blank" rel="noopener" href="https://www.streampanel.net/kb/ssl-streaming-shoutcast-v1-v2-icecast-v2/">https://www.streampanel.net/kb/ssl-streaming-shoutcast-v1-v2-icecast-v2/</a> <br>
 <br>
