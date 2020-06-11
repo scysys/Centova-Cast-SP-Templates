@@ -129,20 +129,20 @@
 {check $rawcontent>0}
 <style type="text/css">
 body {
-	background-color: #E5E5E5;
-	background-image: none;
+    background-color: #E5E5E5;
+    background-image: none;
 }
 #rawcontent {
-	border-top: 1px solid white;
+    border-top: 1px solid white;
 }
 </style>
 {/check}
 <style type="text/css">
 #logobar {
-	background-image: none;
-	background-color: #13223C !important;
-	height: 51px;
-	color: #FFF;
+    background-image: none;
+    background-color: #13223C !important;
+    height: 51px;
+    color: #FFF;
 }
 </style>
 <!--end::Custom Page Scripts --> 
@@ -150,17 +150,17 @@ body {
 <!--begin::Custom Style -->
 <style type="text/css">
 #logobar {
-	height: 0px !important;
-	visibility: hidden !important;
+    height: 0px !important;
+    visibility: hidden !important;
 }
 #coverfloat {
-	visibility: hidden !important;
+    visibility: hidden !important;
 }
 #coverfloat_gloss {
-	visibility: hidden !important;
+    visibility: hidden !important;
 }
 #client-audio {
-	visibility: hidden !important;
+    visibility: hidden !important;
 }
 .m-header-search .m-header-search__form {
     float: left !important;
@@ -246,6 +246,22 @@ var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[
 g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampanel.net/js/container_KVNJAR2p.js'; s.parentNode.insertBefore(g,s);
 </script> 
 <!--end::Matomo Tag Manager -->
+
+<style type="text/css">
+.m-portlet.m-portlet--bordered-semi.sp-portlet-header {
+    background-color: #1E1E2D;
+    border-color: #1E1E2D;
+}
+.m-portlet__head-text.sp-portlet-head-text {
+    color: white !important;
+}
+.m-portlet__body.sp-centovacast-topbar {
+    padding: 0 !important;
+}
+.headermetergroup {
+    color: white;
+}
+</style>
 </head><!-- end::Head -->
 <!-- begin::Body -->
 <body class="m-page--fluid m--skin- m-content--skin-light2 m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--fixed m-aside-left--offcanvas m-aside-right--enabled m-footer--push m-aside--offcanvas-default">
@@ -400,18 +416,15 @@ g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampa
       <!-- END: Aside Menu --> 
     </div>
     <!-- END: Left Aside -->
-    <div class="m-grid__item m-grid__item--fluid m-wrapper">
-      <div id="topbar"> {include "topbar.tpl"} </div>
+    <div class="m-grid__item m-grid__item--fluid m-wrapper"> 
       
       <!-- BEGIN: Header -->
       <div id="header" class="hide-centova-header" style="height:70px !important;border-bottom:none !important;">
-        <div class="m-portlet m-portlet--bordered-semi">
+        <div class="m-portlet m-portlet--bordered-semi sp-portlet-header">
           <div class="m-portlet__head">
             <div class="m-portlet__head-caption">
               <div class="m-portlet__head-title"> <span class="m-portlet__head-icon"> {if $section.icon}<img id="section_icon" src="../theme/images/nav/{$section.icon}.png" alt="{$section.title|htmlentities}"/>{/if} </span>
-                <h3 class="m-portlet__head-text">
-                  <div style="color:#201F2B;">{$section.title|htmlentities}</div>
-                  <small>{$section.subtitle|htmlentities}</small> </h3>
+                <h3 class="m-portlet__head-text sp-portlet-head-text"> {$section.title|htmlentities} <small>{$section.subtitle|htmlentities}</small> </h3>
               </div>
             </div>
             <div class="m-portlet__head-tools">
@@ -420,13 +433,13 @@ g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampa
               </ul>
             </div>
           </div>
-          <!--<div class="m-portlet__body">
-
-</div>--> 
+          <div class="m-portlet__body sp-centovacast-topbar">
+            <div id="topbar"> {include "topbar.tpl"} </div>
+          </div>
         </div>
       </div>
       <!-- END: Header --> 
-      
+      <br/>
       <!-- BEGIN: Subheader -->
       <div class="m-subheader">
         <div class="d-flex align-items-center">
