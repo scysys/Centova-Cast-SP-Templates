@@ -4,7 +4,7 @@ Sollten Sie nicht zurecht kommen, <a href="https://login.streampanel.net/submitt
 {/box}
 
 {box title="Quick Links"}
-	{="Your personal radio page"}: <a target="_blank" rel="noopener" href="{$baseurl}start/{$account.username}">{$baseurl}start/{$account.username}</a> {if $serveradminpage!=""} <br />
+	{="Your personal radio page"}: <a target="_blank" rel="noopener" href="{$baseurl}start/{$account.username}">http{$baseurl|substr:5:-9}cloud:2199/start/{$account.username}</a> {if $serveradminpage!=""} <br />
 	<br />
 {="Stream server (Hostname / HTTP)"}: <a target="_blank" rel="noopener" href="http{$baseurl|substr:5:-9}cloud:{$account.port|htmlentities}">http{$baseurl|substr:5:-9}cloud:{$account.port|htmlentities}</a> <br/>
 {="Stream server (Hostname / HTTPs)"}: <a target="_blank" rel="noopener" href="https{$baseurl|substr:5:-9}cloud:{$account.port|htmlentities}">https{$baseurl|substr:5:-9}cloud:{$account.port|htmlentities}</a> <br/>
