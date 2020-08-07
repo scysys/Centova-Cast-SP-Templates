@@ -405,12 +405,30 @@ g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampa
           {/loop}
           {$leftcolumnhtml}
           <li class="m-menu__section ">
+            <h4 class="m-menu__section-text">Tools</h4>
+            <i class="m-menu__section-icon flaticon-more-v2"></i> </li>
+          <li class="m-menu__item" aria-haspopup="true" m-menu-link-redirect="1"><a href="https://www.streampanel.net/allgemein-neuigkeiten/streamserver-api-beispiele-wurden-der-produktverwaltung-hinzugefuegt/" target="_blank" rel="noopener" class="m-menu__link "><span class="m-menu__item-here"></span><i class="m-menu__link-icon icon-settings"></i><span class="m-menu__link-text">{="Stream Server API"}</span></a></li>
+          <li class="m-menu__item" aria-haspopup="true" m-menu-link-redirect="1"><a href="https://www.streampanel.net/faq/centova-cast-einrichtung-automatischer-wunschboxen/" target="_blank" rel="noopener" class="m-menu__link "><span class="m-menu__item-here"></span><i class="m-menu__link-icon icon-settings"></i><span class="m-menu__link-text">{="Automatic Wishbox"}</span></a></li>
+          <li class="m-menu__item" aria-haspopup="true" m-menu-link-redirect="1"><a href="https://www.streampanel.net/faq/centova-cast-abspielberichte-ihres-webradios-abrufen/" target="_blank" rel="noopener" class="m-menu__link "><span class="m-menu__item-here"></span><i class="m-menu__link-icon icon-settings"></i><span class="m-menu__link-text">{="Playback Reports"}</span></a></li>
+
+          <li class="m-menu__item m-menu__item--submen ifconfig-settings" aria-haspopup="true" m-menu-submenu-toggle="hover"> <a href="javascript:;" class="m-menu__link m-menu__toggle"><span class="m-menu__item-here"></span><i class="m-menu__link-icon icon-settings"></i><span class="m-menu__link-text">Centova Cast: Control</span><i class="m-menu__ver-arrow la la-angle-right"></i></a>
+            <div class="m-menu__submenu"><span class="m-menu__arrow"></span>
+              <ul class="m-menu__subnav">
+                <li class="m-menu__item" aria-haspopup="true" ><a href="https://play.google.com/store/apps/details?id=net.streampanel.flutter_centovacast_api" target="_blank" rel="noopener" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Android</span></a></li>
+                <li class="m-menu__item" aria-haspopup="true" ><a href="https://play.google.com/store/apps/details?id=net.streampanel.flutter_centovacast_api_adfree" target="_blank" rel="noopener" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Android (Pro)</span></a></li>
+                <li class="m-menu__item" aria-haspopup="true" ><a href="#" target="_blank" rel="noopener" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">IOS (Wait for Apple)</span></a></li>
+              </ul>
+            </div>
+          </li>
+        
+          <li class="m-menu__section ">
             <h4 class="m-menu__section-text">Externe Ressourcen</h4>
             <i class="m-menu__section-icon flaticon-more-v2"></i> </li>
-          <li class="m-menu__item" aria-haspopup="true" m-menu-link-redirect="1"><a href="https://www.streampanel.net/blog/" target="_blank" class="m-menu__link "><span class="m-menu__item-here"></span><i class="m-menu__link-icon icon-news"></i><span class="m-menu__link-text">STREAMPANEL Neuigkeiten</span></a></li>
-          <li class="m-menu__item" aria-haspopup="true" m-menu-link-redirect="1"><a href="https://www.streampanel.net/faq/" target="_blank" class="m-menu__link "><span class="m-menu__item-here"></span><i class="m-menu__link-icon icon-faq"></i><span class="m-menu__link-text">Fragen und Antworten</span></a></li>
-          <li class="m-menu__item" aria-haspopup="true" m-menu-link-redirect="1"><a href="https://login.streampanel.net/submitticket.php" target="_blank" class="m-menu__link "><span class="m-menu__item-here"></span><i class="m-menu__link-icon icon-support"></i><span class="m-menu__link-text">Support schreiben</span></a></li>
+          <li class="m-menu__item" aria-haspopup="true" m-menu-link-redirect="1"><a href="https://www.streampanel.net/blog/" target="_blank" rel="noopener" class="m-menu__link "><span class="m-menu__item-here"></span><i class="m-menu__link-icon icon-news"></i><span class="m-menu__link-text">STREAMPANEL Neuigkeiten</span></a></li>
+          <li class="m-menu__item" aria-haspopup="true" m-menu-link-redirect="1"><a href="https://www.streampanel.net/faq/" target="_blank" rel="noopener" class="m-menu__link "><span class="m-menu__item-here"></span><i class="m-menu__link-icon icon-faq"></i><span class="m-menu__link-text">Fragen und Antworten</span></a></li>
+          <li class="m-menu__item" aria-haspopup="true" m-menu-link-redirect="1"><a href="https://login.streampanel.net/submitticket.php" target="_blank" rel="noopener" class="m-menu__link "><span class="m-menu__item-here"></span><i class="m-menu__link-icon icon-support"></i><span class="m-menu__link-text">Support schreiben</span></a></li>
           <!--<li class="m-menu__item" aria-haspopup="true" m-menu-link-redirect="1"><a href="https://www.streampanel.net/forum/" target="_blank" class="m-menu__link "><span class="m-menu__item-here"></span><i class="m-menu__link-icon icon-forumsalt"></i><span class="m-menu__link-text">{$LANG.streampanel_navforum}</span></a></li>-->
+
         </ul>
       </div>
       <!-- END: Aside Menu --> 
