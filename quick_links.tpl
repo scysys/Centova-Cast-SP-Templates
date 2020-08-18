@@ -39,7 +39,7 @@ display: none;
     </div>
     <div class="m-portlet__body">
         {="Your personal radio page"}: <a target="_blank" rel="noopener"
-            href="{$baseurl}start/{$account.username}">http{$baseurl|substr:5:-9}cloud:2199/start/{$account.username}</a>
+            href="http{$baseurl|substr:5:-9}cloud:2199/start/{$account.username}">http{$baseurl|substr:5:-9}cloud:2199/start/{$account.username}</a>
         {if $serveradminpage!=""} <br />
         <br />
         {="Stream server (Hostname / HTTP)"}: <a target="_blank" rel="noopener"
