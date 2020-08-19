@@ -168,6 +168,14 @@ body {
 </style>
 <!--end::Custom Style --> 
 
+<!--begin::Custom Style -->
+<style type="text/css">
+.sp-mobile-friendly-header {
+    margin-top: -70px !important;
+}
+</style>
+<!--end::Custom Style --> 
+
 <!--begin::Custom Script --> 
 <script>
 $(document).ready(function() {
@@ -229,6 +237,15 @@ $(document).ready(function() {
     }
     else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=playlists') {
 		window.location.href = document.location.protocol + '//' + document.location.host + '/client/index.php?page=playlists&plimit=200';
+    }
+    else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?mobile=yes' || 
+    url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=djaccounts&mobile=yes' || 
+    url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=djaccounts&action=add&mobile=yes') {
+		$("body").addClass("m-aside-left--hide");
+		$(".m-stack__item.m-stack__item--fluid.m-header-head").addClass("d-none");
+		$(".m-grid__item.m-header").addClass("d-none");
+		$(".hide-centova-header").addClass("sp-mobile-friendly-header d-none");
+		$(".m-content").addClass("sp-mobile-friendly-header");
     }
 	else {
         $("body").addClass("");
@@ -416,7 +433,7 @@ g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampa
               <ul class="m-menu__subnav">
                 <li class="m-menu__item" aria-haspopup="true" ><a href="https://play.google.com/store/apps/details?id=net.streampanel.flutter_centovacast_api" target="_blank" rel="noopener" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Android</span></a></li>
                 <li class="m-menu__item" aria-haspopup="true" ><a href="https://play.google.com/store/apps/details?id=net.streampanel.flutter_centovacast_api_adfree" target="_blank" rel="noopener" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">Android (Pro)</span></a></li>
-                <li class="m-menu__item" aria-haspopup="true" ><a href="#" target="_blank" rel="noopener" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">IOS (Wait for Apple)</span></a></li>
+                <li class="m-menu__item" aria-haspopup="true" ><a href="https://apps.apple.com/us/app/id1525863938" target="_blank" rel="noopener" class="m-menu__link "><i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span class="m-menu__link-text">IOS</span></a></li>
               </ul>
             </div>
           </li>
