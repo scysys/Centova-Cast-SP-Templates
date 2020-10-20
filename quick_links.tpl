@@ -122,7 +122,69 @@ display: none;
 </div>
 
 <!-- Box 5 -->
-{$connection_details}
+<!--{$connection_details}-->
+
+<div class="m-portlet m-portlet--mobile m-portlet--rounded m-portlet--head-solid-bg">
+    <div class="m-portlet__head sp-box-table">
+        <div class="m-portlet__head-caption">
+            <div class="m-portlet__head-title">
+                <h3 class="m-portlet__head-text sp-box-table"> {="Broadcast: With active AutoDJ"} </h3>
+            </div>
+        </div>
+    </div>
+    <div class="m-portlet__body">
+        {if $account.servertype=="ShoutCast2"}
+            <table border="0">
+            <tr><td><strong>{="Protocol"}</strong>&nbsp;</td><td>SHOUTcast V1</td></tr>
+            <tr><td><strong>{="IP-Address"}</strong>&nbsp;</td><td>{$serverhostname|htmlentities}</td></tr>
+            <tr><td><strong>{="Port"}</strong>&nbsp;</td><td>{$account.port|add:2|htmlentities}</td></tr>
+            <tr><td><strong>{="Bitrate"}</strong>&nbsp;</td><td>{$account.maxbitrate|htmlentities} {="kbps"}</td></tr>
+            <tr><td><strong>{="Password"}</strong>&nbsp;</td><td>{="%sdjusername:djpassword%s","<a href='index.php?page=djaccounts'>","</a>"}</td></tr>
+            </table>
+        {/if}
+        {if $account.servertype=="IceCast"}
+            <table border="0">
+            <tr><td><strong>{="Protocol"}</strong>&nbsp;</td><td>SHOUTcast V1</td></tr>
+            <tr><td><strong>{="IP-Address"}</strong>&nbsp;</td><td>{$serverhostname|htmlentities}</td></tr>
+            <tr><td><strong>{="Port"}</strong>&nbsp;</td><td>{$account.port|add:1|htmlentities}</td></tr>
+            <tr><td><strong>{="Bitrate"}</strong>&nbsp;</td><td>{$account.maxbitrate|htmlentities} {="kbps"}</td></tr>
+            <tr><td><strong>{="Password"}</strong>&nbsp;</td><td>{="%sdjusername:djpassword%s","<a href='index.php?page=djaccounts'>","</a>"}</td></tr>
+            </table>
+        {/if}
+    </div>
+</div>
+
+<div class="m-portlet m-portlet--mobile m-portlet--rounded m-portlet--head-solid-bg">
+    <div class="m-portlet__head sp-box-table">
+        <div class="m-portlet__head-caption">
+            <div class="m-portlet__head-title">
+                <h3 class="m-portlet__head-text sp-box-table"> {="Broadcast: Server only (Without AutoDJ)"} </h3>
+            </div>
+        </div>
+    </div>
+    <div class="m-portlet__body">
+        {if $account.servertype=="ShoutCast2"}
+            <table border="0">
+            <tr><td><strong>{="Protocol"}</strong>&nbsp;</td><td>SHOUTcast V2</td></tr>
+            <tr><td><strong>{="IP-Address"}</strong>&nbsp;</td><td>{$serverhostname|htmlentities}</td></tr>
+            <tr><td><strong>{="Port"}</strong>&nbsp;</td><td>{$account.port|htmlentities}</td></tr>
+            <tr><td><strong>{="Bitrate"}</strong>&nbsp;</td><td>{$account.maxbitrate|htmlentities} {="kbps"}</td></tr>
+            <tr><td><strong>{="Mountpoint"}</strong></td><td>/live</td></tr>
+            <tr><td><strong>{="Password"}</strong>&nbsp;</td><td>({="The 'Source password' value from your %sstream settings%s","<a href='index.php?page=configure'>","</a>"})</td></tr>
+            </table>
+        {/if}
+        {if $account.servertype=="IceCast"}
+            <table border="0">
+            <tr><td><strong>{="Protocol"}</strong>&nbsp;</td><td>Icecast V2</td></tr>
+            <tr><td><strong>{="IP-Address"}</strong>&nbsp;</td><td>{$serverhostname|htmlentities}</td></tr>
+            <tr><td><strong>{="Port"}</strong>&nbsp;</td><td>{$account.port|htmlentities}</td></tr>
+            <tr><td><strong>{="Bitrate"}</strong>&nbsp;</td><td>{$account.maxbitrate|htmlentities} {="kbps"}</td></tr>
+            <tr><td><strong>{="Mountpoint"}</strong></td><td>/live</td></tr>
+            <tr><td><strong>{="Password"}</strong>&nbsp;</td><td>({="The 'Source password' value from your %sstream settings%s","<a href='index.php?page=configure'>","</a>"})</td></tr>
+            </table>
+        {/if}
+</div>
+</div>
 
 <!-- Box 6 -->
 <div class="m-portlet m-portlet--mobile m-portlet--rounded m-portlet--head-solid-bg">

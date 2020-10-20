@@ -144,6 +144,12 @@ body {
     height: 51px;
     color: #FFF;
 }
+/*
+* Cant inject it :( so it´s disabled globally. No one is using this link in the past.
+*/
+.ccbuy {
+    display: none;
+}
 </style>
 <!--end::Custom Page Scripts --> 
 
@@ -238,14 +244,13 @@ $(document).ready(function() {
     else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=playlists') {
 		window.location.href = document.location.protocol + '//' + document.location.host + '/client/index.php?page=playlists&plimit=200';
     }
-    else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?mobile=yes' || 
-    url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=djaccounts&mobile=yes' || 
-    url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=djaccounts&action=add&mobile=yes') {
+    else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?mobile=yes') {
 		$("body").addClass("m-aside-left--hide");
 		$(".m-stack__item.m-stack__item--fluid.m-header-head").addClass("d-none");
 		$(".m-grid__item.m-header").addClass("d-none");
 		$(".hide-centova-header").addClass("sp-mobile-friendly-header d-none");
 		$(".m-content").addClass("sp-mobile-friendly-header");
+		$(".ccbuy").addClass("d-none");
     }
 	else {
         $("body").addClass("");
@@ -371,7 +376,7 @@ g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampa
                         <div class="m-dropdown__content">
                           <div class="m-scrollable" data-scrollable="false" data-height="380" data-mobile-height="200">
                             <div class="m-nav-grid m-nav-grid--skin-light">
-                              <div class="m-nav-grid__row"> <a href="https://www.streampanel.net/kb/centova-cast-wie-fange-ich-an/" target="_blank" class="m-nav-grid__item"> <i class="m-nav-grid__icon flaticon-file"></i> <span class="m-nav-grid__text">Ersteinrichtung</span> </a> <a href="#" class="m-nav-grid__item"> <i class="m-nav-grid__icon flaticon-time"></i> <span class="m-nav-grid__text">-</span> </a> </div>
+                              <div class="m-nav-grid__row"> <a href="https://www.streampanel.net/faq/centova-cast-wie-fange-ich-an/" target="_blank" class="m-nav-grid__item"> <i class="m-nav-grid__icon flaticon-file"></i> <span class="m-nav-grid__text">Ersteinrichtung</span> </a> <a href="#" class="m-nav-grid__item"> <i class="m-nav-grid__icon flaticon-time"></i> <span class="m-nav-grid__text">-</span> </a> </div>
                               <div class="m-nav-grid__row"> <a href="#" class="m-nav-grid__item"> <i class="m-nav-grid__icon flaticon-folder"></i> <span class="m-nav-grid__text">-</span> </a> <a href="https://login.streampanel.net/submitticket.php" target="_blank" class="m-nav-grid__item"> <i class="m-nav-grid__icon flaticon-mail"></i> <span class="m-nav-grid__text">Support kontaktieren</span> </a> </div>
                             </div>
                           </div>

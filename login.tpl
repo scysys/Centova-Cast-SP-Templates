@@ -120,6 +120,9 @@
 .m-login.m-login--6 .m-login__wrapper .m-login__body .m-login__signin .m-login__title {
 	margin-bottom: -1rem !important;
 }
+.sp-mobile-friendly-header {
+    margin-top: -70px !important;
+}
 </style>
 <!--end::Custom Style -->
 
@@ -140,7 +143,7 @@ g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampa
 <!-- begin:: Page -->
 <div class="m-grid m-grid--hor m-grid--root m-page">
   <div class="m-grid__item m-grid__item--fluid m-grid m-grid--desktop m-grid--ver-desktop m-grid--hor-tablet-and-mobile m-login m-login--6" id="m_login">
-    <div class="m-grid__item m-grid__item--order-tablet-and-mobile-2  m-grid m-grid--hor m-login__aside " style="background-image: url(https://cassets.streampanel.cloud/universal/assets/app/media/img/bg/bg-2.jpg);">
+    <div class="m-grid__item m-grid__item--order-tablet-and-mobile-2 m-grid m-grid--hor m-login__aside" style="background-image: url(https://cassets.streampanel.cloud/universal/assets/app/media/img/bg/bg-2.jpg);">
       <div class="m-grid__item">
         <div class="m-login__logo"> <a href="/login/index.php"> <img src="https://cassets.streampanel.cloud/logo/190w.png"> </a> </div>
       </div>
@@ -187,7 +190,24 @@ g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampa
 <!--begin::Page Scripts --> 
 <script src="https://cassets.streampanel.cloud/universal/assets/snippets/custom/pages/user/login6.js" type="text/javascript"></script> 
 <script src="https://cassets.streampanel.cloud/universal/assets/global/plugins/backstretch/backstretch.min.js"></script> 
-<script src="https://cassets.streampanel.cloud/universal/assets/global/plugins/loginbg/js/login.js"></script> 
+<script src="https://cassets.streampanel.cloud/universal/assets/global/plugins/loginbg/js/login.js"></script>
+
+<script>
+$(document).ready(function() {
+    var url = document.location.href;
+    
+    if (url === document.location.protocol + '//' + document.location.host + '/login/index.php?mobile=yes') {
+		$(".m-grid__item.m-grid__item--order-tablet-and-mobile-2.m-grid.m-grid--hor.m-login__aside").addClass("d-none");
+		$(".m-link.m--font-danger").addClass("d-none");
+		$(".btn.btn-primary.m-btn.m-btn--pill.m-btn--custom.m-btn--air.m-login__btn.m-login__btn--primary").addClass("btn-block");
+    }
+	else {
+        $("body").addClass("");
+    }
+});
+console.log (document.location);
+</script> 
+
 <!--end::Page Scripts -->
 </body>
 <!-- end::Body -->
