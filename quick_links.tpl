@@ -61,16 +61,8 @@ display: none;
         {="Web player (IP-Address)"}: <a target="_blank" rel="noopener"
             href="{$serveradminpage}/stream">{$serveradminpage}/stream</a> <br /> <br />
         {="On SHOUTcast V2 this is not working without an shoutcast.com premium account"}.
-        {="A little further down there is a solution for SHOUTcast V2 users without a premium account"}.
-        <br /><br />
-        <strong>{="Solutions for old stream server or for SHOUTcast V2 without an shoutcast.com premium account"}</strong> <br />
-        {="SSL Proxy for non supportet streamserver"}: <a target="_blank" rel="noopener"
-            href="https://nelly.streampanel.net/spradio/index.php?q=http{$baseurl|substr:5:-9}cloud:{$account.port|htmlentities}/stream">https://nelly.streampanel.net/spradio/index.php?q=http{$baseurl|substr:5:-9}cloud:{$account.port|htmlentities}/stream</a>
-        <font color="red">({="Without real visitor ip"})</font> <br>
-        {="Learn more here"}: <a target="_blank" rel="noopener"
-            href="https://www.streampanel.net/kb/ssl-streaming-shoutcast-v1-v2-icecast-v2/">https://www.streampanel.net/kb/ssl-streaming-shoutcast-v1-v2-icecast-v2/</a>
-        <br>
-        <br>
+        {="Under this text there is a solution for SHOUTcast V2 users without a premium account"}.
+        <br />
         {="SHOUTcast V2 without premium"}: <a target="_blank" rel="noopener"
             href="{$baseurl|substr:0:-6}/{$username}?mp=/stream">{$baseurl|substr:0:-6}/{$username}?mp=/stream</a>
         <hr />
