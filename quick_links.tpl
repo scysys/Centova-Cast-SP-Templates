@@ -217,7 +217,7 @@ display: none;
             </tr>
             <tr>
                 <td height="38">{="FTP Password"}:&nbsp;</td>
-                <td>({="Your administrator password"})</td>
+                <td>({="The 'Administrator password' value from your %sstream settings%s","<a href='index.php?page=configure'>","</a>"})</td>
             </tr>
         </table>
     </div>
