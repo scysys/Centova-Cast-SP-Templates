@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
 <!--begin::Web font -->
-<link rel="preload" href="style.css" as="style" />
+<link rel="preload" href="https://cassets.streampanel.cloud/fonts/aller/style.css" as="style" />
 <link rel="stylesheet" href="https://cassets.streampanel.cloud/fonts/aller/style.css" />
 <!--end::Web font -->
 
