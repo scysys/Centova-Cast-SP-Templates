@@ -7,81 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
 <!--begin::Web font -->
-<style type="text/css">
-/* poppins-300 - latin */
-@font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    src: url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-300.eot'); /* IE9 Compat Modes */
-    src: local('Poppins Light'), local('Poppins-Light'), url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-300.woff2') format('woff2'), /* Super Modern Browsers */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-300.woff') format('woff'), /* Modern Browsers */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-300.svg#Poppins') format('svg'); /* Legacy iOS */
-}
-/* poppins-regular - latin */
-@font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local('Poppins Regular'), local('Poppins-Regular'), url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-regular.woff') format('woff'), /* Modern Browsers */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
-}
-/* poppins-500 - latin */
-@font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    src: url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-500.eot'); /* IE9 Compat Modes */
-    src: local('Poppins Medium'), local('Poppins-Medium'), url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-500.woff2') format('woff2'), /* Super Modern Browsers */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-500.woff') format('woff'), /* Modern Browsers */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-500.svg#Poppins') format('svg'); /* Legacy iOS */
-}
-/* poppins-600 - latin */
-@font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    src: url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-600.eot'); /* IE9 Compat Modes */
-    src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-600.woff2') format('woff2'), /* Super Modern Browsers */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-600.woff') format('woff'), /* Modern Browsers */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-600.svg#Poppins') format('svg'); /* Legacy iOS */
-}
-/* poppins-700 - latin */
-@font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    src: url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-700.eot'); /* IE9 Compat Modes */
-    src: local('Poppins Bold'), local('Poppins-Bold'), url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-700.woff2') format('woff2'), /* Super Modern Browsers */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-700.woff') format('woff'), /* Modern Browsers */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/poppins/poppins-v5-latin-700.svg#Poppins') format('svg'); /* Legacy iOS */
-}
-/* roboto-300 - latin */
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    src: url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-300.eot'); /* IE9 Compat Modes */
-    src: local('Roboto Light'), local('Roboto-Light'), url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-300.woff2') format('woff2'), /* Super Modern Browsers */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-300.woff') format('woff'), /* Modern Browsers */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-300.svg#Roboto') format('svg'); /* Legacy iOS */
-}
-/* roboto-regular - latin */
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local('Roboto'), local('Roboto-Regular'), url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-regular.woff') format('woff'), /* Modern Browsers */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
-}
-/* roboto-500 - latin */
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    src: url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-500.eot'); /* IE9 Compat Modes */
-    src: local('Roboto Medium'), local('Roboto-Medium'), url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-500.woff2') format('woff2'), /* Super Modern Browsers */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-500.woff') format('woff'), /* Modern Browsers */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-500.svg#Roboto') format('svg'); /* Legacy iOS */
-}
-/* roboto-700 - latin */
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    src: url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-700.eot'); /* IE9 Compat Modes */
-    src: local('Roboto Bold'), local('Roboto-Bold'), url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-700.woff2') format('woff2'), /* Super Modern Browsers */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-700.woff') format('woff'), /* Modern Browsers */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */ url('https://cassets.streampanel.cloud/universal/assets/global/fonts/roboto/roboto-v18-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
-}
-</style>
-<!--end::Web font --> 
+<link rel="preload" href="style.css" as="style" />
+<link rel="stylesheet" href="https://cassets.streampanel.cloud/fonts/aller/style.css" />
+<!--end::Web font -->
 
 <!--begin::Global Theme Styles -->
 <link href="https://cassets.streampanel.cloud/universal/assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
@@ -260,14 +188,14 @@ console.log (document.location);
 </script> 
 <!--end::Custom Script --> 
 
-<!--begin::Matomo Tag Manager --> 
+<!-- Matomo Tag Manager -->
 <script type="text/javascript">
-var _mtm = _mtm || [];
+var _mtm = window._mtm = window._mtm || [];
 _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
 var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampanel.net/js/container_KVNJAR2p.js'; s.parentNode.insertBefore(g,s);
-</script> 
-<!--end::Matomo Tag Manager -->
+g.type='text/javascript'; g.async=true; g.src='https://pw.streampanel.net/js/container_KVNJAR2p.js'; s.parentNode.insertBefore(g,s);
+</script>
+<!-- End Matomo Tag Manager -->
 
 <style type="text/css">
 .m-portlet.m-portlet--bordered-semi.sp-portlet-header {

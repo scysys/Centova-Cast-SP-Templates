@@ -5,6 +5,11 @@
 <title>Webradio > {$streamname}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!--begin::Web font -->
+<link rel="preload" href="style.css" as="style" />
+<link rel="stylesheet" href="https://cassets.streampanel.cloud/fonts/aller/style.css" />
+<!--end::Web font -->
+
 <!-- Icons -->
 <link rel="shortcut icon" href="https://cassets.streampanel.cloud/favicons/favicon.png">
 <link rel="icon" type="image/png" href="https://cassets.streampanel.cloud/favicons/favicon-16x16.png" sizes="16x16">
@@ -29,11 +34,12 @@
     
 <!-- Matomo Tag Manager -->
 <script type="text/javascript">
-var _mtm = _mtm || [];
+var _mtm = window._mtm = window._mtm || [];
 _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
 var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://pw.streampanel.net/js/container_KVNJAR2p.js'; s.parentNode.insertBefore(g,s);
+g.type='text/javascript'; g.async=true; g.src='https://pw.streampanel.net/js/container_KVNJAR2p.js'; s.parentNode.insertBefore(g,s);
 </script>
+<!-- End Matomo Tag Manager -->
 
 </head>
 <body>
