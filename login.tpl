@@ -35,8 +35,35 @@
     <link rel="stylesheet" href="https://cassets.streampanel.cloud/fonts/aller/style.css" />
 
     <style type="text/css">
-        * {
+        /* Custom webfont for whole webpage */
+        body,
+        input,
+        button,
+        select,
+        textarea,
+        div,
+        a,
+        p {
             font-family: aller, sans-serif !important;
+            /*font-style: normal;
+  font-weight: 400;*/
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .h1,
+        .h2,
+        .h3,
+        .h4,
+        .h5,
+        .h6 {
+            font-family: aller, sans-serif !important;
+            /*font-style: normal;
+  font-weight: 700;*/
         }
     </style>
     <!--end::Web font -->
@@ -68,7 +95,7 @@
     <!-- Matomo Tag Manager -->
     <script type="text/javascript">
         var _mtm = window._mtm = window._mtm || [];
-               _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+                      _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
         var d = document,
             g = d.createElement('script'),
             s = d.getElementsByTagName('script')[0];
