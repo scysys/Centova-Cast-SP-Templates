@@ -42,7 +42,6 @@
         select,
         textarea,
         div,
-        span,
         a,
         p {
             font-family: aller, sans-serif !important;
