@@ -33,6 +33,12 @@
     <!--begin::Web font -->
     <link rel="preload" href="https://cassets.streampanel.cloud/fonts/aller/style.css" as="style" />
     <link rel="stylesheet" href="https://cassets.streampanel.cloud/fonts/aller/style.css" />
+
+    <style type="text/css">
+        * {
+            font-family: aller, sans-serif !important;
+        }
+    </style>
     <!--end::Web font -->
 
     <!--begin::Custom Style -->
@@ -62,7 +68,7 @@
     <!-- Matomo Tag Manager -->
     <script type="text/javascript">
         var _mtm = window._mtm = window._mtm || [];
-        _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+               _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
         var d = document,
             g = d.createElement('script'),
             s = d.getElementsByTagName('script')[0];
