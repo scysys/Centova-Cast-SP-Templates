@@ -6,11 +6,6 @@
 <title>{$title} {$section.subtitle|htmlentities}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
-<!--begin::Web font -->
-<link rel="preload" href="https://cassets.streampanel.cloud/fonts/aller/style.css" as="style" />
-<link rel="stylesheet" href="https://cassets.streampanel.cloud/fonts/aller/style.css" />
-<!--end::Web font -->
-
 <!--begin::Global Theme Styles -->
 <link href="https://cassets.streampanel.cloud/universal/assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
 <link href="https://cassets.streampanel.cloud/universal/assets/base/style.bundle.css" rel="stylesheet" type="text/css" />
@@ -212,6 +207,12 @@ g.type='text/javascript'; g.async=true; g.src='https://pw.streampanel.net/js/con
     color: white;
 }
 </style>
+
+<!--begin::Web font -->
+<link rel="preload" href="https://cassets.streampanel.cloud/fonts/aller/style.css" as="style" />
+<link rel="stylesheet" href="https://cassets.streampanel.cloud/fonts/aller/style.css" />
+<!--end::Web font -->
+
 </head><!-- end::Head -->
 <!-- begin::Body -->
 <body class="m-page--fluid m--skin- m-content--skin-light2 m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--fixed m-aside-left--offcanvas m-aside-right--enabled m-footer--push m-aside--offcanvas-default">
