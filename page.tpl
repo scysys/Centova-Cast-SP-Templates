@@ -8,13 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
     <!--begin::Global Theme Styles -->
-    <link href="https://cassets.streampanel.cloud/universal/assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="https://cassets.streampanel.cloud/universal/assets/base/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="https://spuassets.streampanel.cloud/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="https://spuassets.streampanel.cloud/base/style.bundle.css" rel="stylesheet" type="text/css" />
     <!--end::Global Theme Styles -->
 
     <!-- whhg-fonts -->
-    <link rel="stylesheet" type="text/css" media="all" href="https://cassets.streampanel.cloud/universal/assets/global/fonts/whhg-font/css/whhg.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="https://cassets.streampanel.cloud/universal/assets/global/fonts/whhg-font/css/whhg-custom-centovacast.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="https://spuassets.streampanel.cloud/global/fonts/whhg-font/css/whhg.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="https://spuassets.streampanel.cloud/global/fonts/whhg-font/css/whhg-custom-centovacast.css" />
 
     <!--begin::Favicons -->
     <link rel="shortcut icon" href="https://cassets.streampanel.cloud/favicons/favicon.png">
@@ -35,8 +35,8 @@
     <!--end::Favicons -->
 
     <!--begin::Global Theme Bundle -->
-    <script src="https://cassets.streampanel.cloud/universal/assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
-    <script src="https://cassets.streampanel.cloud/universal/assets/base/scripts.bundle.js" type="text/javascript"></script>
+    <script src="https://spuassets.streampanel.cloud/vendors/base/vendors.bundle.js" type="text/javascript"></script>
+    <script src="https://spuassets.streampanel.cloud/base/scripts.bundle.js" type="text/javascript"></script>
     <!--end::Global Theme Bundle -->
 
     <!--begin::Custom Page Scripts -->
@@ -218,6 +218,9 @@
         select,
         textarea,
         div,
+        small,
+        th,
+        td,
         a,
         p {
             font-family: aller, sans-serif !important;

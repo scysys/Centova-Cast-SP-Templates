@@ -40,6 +40,9 @@
         select,
         textarea,
         div,
+        small,
+        th,
+        td,
         a,
         p {
             font-family: aller, sans-serif !important;

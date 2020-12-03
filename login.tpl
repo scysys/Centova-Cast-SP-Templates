@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
     <!--begin::Global Theme Styles -->
-    <link href="https://cassets.streampanel.cloud/universal/assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="https://cassets.streampanel.cloud/universal/assets/base/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="https://spuassets.streampanel.cloud/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="https://spuassets.streampanel.cloud/base/style.bundle.css" rel="stylesheet" type="text/css" />
     <!--end::Global Theme Styles -->
 
     <!--begin::Favicons -->
@@ -42,6 +42,9 @@
         select,
         textarea,
         div,
+        small,
+        th,
+        td,
         a,
         p {
             font-family: aller, sans-serif !important;
@@ -116,7 +119,7 @@
     <!-- begin:: Page -->
     <div class="m-grid m-grid--hor m-grid--root m-page">
         <div class="m-grid__item m-grid__item--fluid m-grid m-grid--desktop m-grid--ver-desktop m-grid--hor-tablet-and-mobile m-login m-login--6" id="m_login">
-            <div class="m-grid__item m-grid__item--order-tablet-and-mobile-2 m-grid m-grid--hor m-login__aside" style="background-image: url(https://cassets.streampanel.cloud/universal/assets/app/media/img/bg/bg-2.jpg);">
+            <div class="m-grid__item m-grid__item--order-tablet-and-mobile-2 m-grid m-grid--hor m-login__aside" style="background-image: url(https://spuassets.streampanel.cloud/app/media/img/bg/bg-2.jpg);">
                 <div class="m-grid__item">
                     <div class="m-login__logo"> <a href="/login/index.php"> <img src="https://cassets.streampanel.cloud/logo/190w.png"> </a> </div>
                 </div>
@@ -157,13 +160,13 @@
     </div>
     <!-- end:: Page -->
     <!--begin::Global Theme Bundle -->
-    <script src="https://cassets.streampanel.cloud/universal/assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
-    <script src="https://cassets.streampanel.cloud/universal/assets/base/scripts.bundle.js" type="text/javascript"></script>
+    <script src="https://spuassets.streampanel.cloud/vendors/base/vendors.bundle.js" type="text/javascript"></script>
+    <script src="https://spuassets.streampanel.cloud/base/scripts.bundle.js" type="text/javascript"></script>
     <!--end::Global Theme Bundle -->
     <!--begin::Page Scripts -->
-    <script src="https://cassets.streampanel.cloud/universal/assets/snippets/custom/pages/user/login6.js" type="text/javascript"></script>
-    <script src="https://cassets.streampanel.cloud/universal/assets/global/plugins/backstretch/backstretch.min.js"></script>
-    <script src="https://cassets.streampanel.cloud/universal/assets/global/plugins/loginbg/js/login.js"></script>
+    <script src="https://spuassets.streampanel.cloud/snippets/custom/pages/user/login6.js" type="text/javascript"></script>
+    <script src="https://spuassets.streampanel.cloud/global/plugins/backstretch/backstretch.min.js"></script>
+    <script src="https://spuassets.streampanel.cloud/global/plugins/loginbg/js/login.js"></script>
 
     <script>
         $(document).ready(function() {
