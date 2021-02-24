@@ -138,7 +138,7 @@
                 $("li.ifconfig-settings").addClass("m-menu__item--open m-menu__item--active");
             } else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=widgets') {
                 $("li.ifconfig-settings").addClass("m-menu__item--open m-menu__item--active");
-            } else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=djaccounts' || url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=djaccounts&action=add' || url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=djaccounts&action=edit&id=' + url.substring(url.lastIndexOf('=') + 1)) {
+            } else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=djaccounts' || url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=djaccounts&action=add' || url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=djaccounts&plimit=200' || url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=djaccounts&action=edit&id=' + url.substring(url.lastIndexOf('=') + 1)) {
                 $("li.ifconfig-user").addClass("m-menu__item--open m-menu__item--active");
             } else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=statistics') {
                 $("li.ifconfig-statistics").addClass("m-menu__item--open m-menu__item--active");
