@@ -82,7 +82,7 @@ display: none;
         </div>
     </div>
     <div class="m-portlet__body">
-        <table cellsacing="0" cellpadding="0" border="0">
+        <table class="table">
             {loop $player=$players}
             <tr>
                 <td width="170"><img align="absmiddle" src="{$player.image}" border="0" alt="*" />
@@ -126,7 +126,7 @@ display: none;
     </div>
     <div class="m-portlet__body">
         {if $account.servertype=="ShoutCast2"}
-            <table border="0">
+            <table class="table">
             <tr><td><strong>{="Protocol"}</strong>&nbsp;</td><td>SHOUTcast V1</td></tr>
             <tr><td><strong>{="IP-Address"}</strong>&nbsp;</td><td>{$serverhostname|htmlentities}</td></tr>
             <tr><td><strong>{="Port"}</strong>&nbsp;</td><td>{$account.port|add:2|htmlentities}</td></tr>
@@ -135,7 +135,7 @@ display: none;
             </table>
         {/if}
         {if $account.servertype=="IceCast"}
-            <table border="0">
+            <table class="table">
             <tr><td><strong>{="Protocol"}</strong>&nbsp;</td><td>SHOUTcast V1</td></tr>
             <tr><td><strong>{="IP-Address"}</strong>&nbsp;</td><td>{$serverhostname|htmlentities}</td></tr>
             <tr><td><strong>{="Port"}</strong>&nbsp;</td><td>{$account.port|add:1|htmlentities}</td></tr>
@@ -156,7 +156,7 @@ display: none;
     </div>
     <div class="m-portlet__body">
         {if $account.servertype=="ShoutCast2"}
-            <table border="0">
+            <table class="table">
             <tr><td><strong>{="Protocol"}</strong>&nbsp;</td><td>SHOUTcast V2</td></tr>
             <tr><td><strong>{="IP-Address"}</strong>&nbsp;</td><td>{$serverhostname|htmlentities}</td></tr>
             <tr><td><strong>{="Port"}</strong>&nbsp;</td><td>{$account.port|htmlentities}</td></tr>
@@ -166,7 +166,7 @@ display: none;
             </table>
         {/if}
         {if $account.servertype=="IceCast"}
-            <table border="0">
+            <table class="table">
             <tr><td><strong>{="Protocol"}</strong>&nbsp;</td><td>Icecast V2</td></tr>
             <tr><td><strong>{="IP-Address"}</strong>&nbsp;</td><td>{$serverhostname|htmlentities}</td></tr>
             <tr><td><strong>{="Port"}</strong>&nbsp;</td><td>{$account.port|htmlentities}</td></tr>
@@ -206,7 +206,7 @@ display: none;
         {="Enter this information into your FTP client software to upload your media for the autoDJ"}.<br />
         {="Upload only inside the Folder 'media'"}.<br />
         <br />
-        <table cellspacing="1" cellpadding="1" border="0">
+        <table class="table">
             <tr>
                 <td>{="FTP Hostname"}:&nbsp;</td>
                 <td><strong>{$serverhostname}</strong></td>
