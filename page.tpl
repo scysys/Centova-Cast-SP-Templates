@@ -146,8 +146,8 @@
                 $("li.ifconfig-statistics").addClass("m-menu__item--open m-menu__item--active");
             } else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=livestats') {
                 $("li.ifconfig-statistics").addClass("m-menu__item--open m-menu__item--active");
-            } else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=logs') {
-                $("li.ifconfig-statistics").addClass("m-menu__item--open m-menu__item--active");
+            } else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=logs' || url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=logs&type=source' || url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=logs&type=error') {
+                $("li.ifconfig-book").addClass("m-menu__item--open m-menu__item--active");
             } else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=control&action=stop') {
                 $("li.ifconfig-server").addClass("m-menu__item--open m-menu__item--active");
             } else if (url === document.location.protocol + '//' + document.location.host + '/client/index.php?page=control&action=restart') {
@@ -261,11 +261,11 @@ g.type='text/javascript'; g.async=true; g.src='https://pw.streampanel.net/js/con
                             <div class="m-stack__item m-stack__item--middle m-brand__tools">
 
                                 <!-- BEGIN: Responsive Aside Left Menu Toggler -->
-                                <a href="javascript:;" id="m_aside_left_offcanvas_toggle" class="m-brand__icon m-brand__toggler m-brand__toggler--left m--visible-tablet-and-mobile-inline-block"> <span></span> </a>
+                                <a href="javascript:;" id="m_aside_left_offcanvas_toggle" class="m-brand__icon m-brand__toggler m-brand__toggler--left m--visible-tablet-and-mobile-inline-block" title="Menu"> <span></span> </a>
                                 <!-- END -->
 
                                 <!-- BEGIN: Aside Hide Toggle -->
-                                <a href="javascript:;" id="m_aside_left_hide_toggle" class="m-brand__icon m-brand__toggler m-brand__toggler--left m--hidden-tablet-and-mobile"> <span></span> </a>
+                                <a href="javascript:;" id="m_aside_left_hide_toggle" class="m-brand__icon m-brand__toggler m-brand__toggler--left m--hidden-tablet-and-mobile" title="Menu"> <span></span> </a>
                                 <!-- END -->
 
                             </div>
