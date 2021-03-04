@@ -9,6 +9,12 @@ color: white !important;
 .m-subheader {
 display: none;
 }
+p.spred {
+    color: red;
+}
+p.spbold {
+    font-weight: bold;
+}
 {/css}
 
 <!-- Box 1 -->
@@ -127,21 +133,23 @@ display: none;
     <div class="m-portlet__body">
         {if $account.servertype=="ShoutCast2"}
             <table class="table">
-            <tr><td><strong>{="Protocol"}</strong>&nbsp;</td><td>SHOUTcast V1</td></tr>
-            <tr><td><strong>{="IP-Address"}</strong>&nbsp;</td><td>{$serverhostname|htmlentities}</td></tr>
-            <tr><td><strong>{="Port"}</strong>&nbsp;</td><td>{$account.port|add:2|htmlentities}</td></tr>
-            <tr><td><strong>{="Bitrate"}</strong>&nbsp;</td><td>{$account.maxbitrate|htmlentities} {="kbps"}</td></tr>
-            <tr><td><strong>{="Password"}</strong>&nbsp;</td><td>{="%sdjusername:djpassword%s","<a href='index.php?page=djaccounts'>","</a>"}</td></tr>
+            <tr><td><strong>{="Protocol"}</strong></td><td>SHOUTcast V1</td></tr>
+            <tr><td><strong>{="IP-Address"}</strong></td><td>{$serverhostname|htmlentities}</td></tr>
+            <tr><td><strong>{="Port"}</strong></td><td>{$account.port|add:2|htmlentities}</td></tr>
+            <tr><td><strong>{="Bitrate"}</strong></td><td>{$account.maxbitrate|htmlentities} {="kbps"}</td></tr>
+            <tr><td><strong>{="Password"}</strong></td><td>{="%sdjusername:djpassword%s","<a href='index.php?page=djaccounts'>","</a>"}</td></tr>
             </table>
+            <p class="spred spbold">{="If you have trouble with your connection to the server, check all your details twice. Any Broadcaster is working with our systems! Contact us, that we can guide you to a successful connection."}</p>
         {/if}
         {if $account.servertype=="IceCast"}
             <table class="table">
-            <tr><td><strong>{="Protocol"}</strong>&nbsp;</td><td>SHOUTcast V1</td></tr>
-            <tr><td><strong>{="IP-Address"}</strong>&nbsp;</td><td>{$serverhostname|htmlentities}</td></tr>
-            <tr><td><strong>{="Port"}</strong>&nbsp;</td><td>{$account.port|add:1|htmlentities}</td></tr>
-            <tr><td><strong>{="Bitrate"}</strong>&nbsp;</td><td>{$account.maxbitrate|htmlentities} {="kbps"}</td></tr>
-            <tr><td><strong>{="Password"}</strong>&nbsp;</td><td>{="%sdjusername:djpassword%s","<a href='index.php?page=djaccounts'>","</a>"}</td></tr>
+            <tr><td><strong>{="Protocol"}</strong></td><td>SHOUTcast V1</td></tr>
+            <tr><td><strong>{="IP-Address"}</strong></td><td>{$serverhostname|htmlentities}</td></tr>
+            <tr><td><strong>{="Port"}</strong></td><td>{$account.port|add:1|htmlentities}</td></tr>
+            <tr><td><strong>{="Bitrate"}</strong></td><td>{$account.maxbitrate|htmlentities} {="kbps"}</td></tr>
+            <tr><td><strong>{="Password"}</strong></td><td>{="%sdjusername:djpassword%s","<a href='index.php?page=djaccounts'>","</a>"}</td></tr>
             </table>
+            <p class="spred spbold">{="If you have trouble with your connection to the server, check all your details twice. Any Broadcaster is working with our systems! Contact us, that we can guide you to a successful connection."}</p>
         {/if}
     </div>
 </div>
@@ -157,23 +165,26 @@ display: none;
     <div class="m-portlet__body">
         {if $account.servertype=="ShoutCast2"}
             <table class="table">
-            <tr><td><strong>{="Protocol"}</strong>&nbsp;</td><td>SHOUTcast V2</td></tr>
-            <tr><td><strong>{="IP-Address"}</strong>&nbsp;</td><td>{$serverhostname|htmlentities}</td></tr>
-            <tr><td><strong>{="Port"}</strong>&nbsp;</td><td>{$account.port|htmlentities}</td></tr>
-            <tr><td><strong>{="Bitrate"}</strong>&nbsp;</td><td>{$account.maxbitrate|htmlentities} {="kbps"}</td></tr>
+            <tr><td><strong>{="Protocol"}</strong></td><td>SHOUTcast V2</td></tr>
+            <tr><td><strong>{="IP-Address"}</strong></td><td>{$serverhostname|htmlentities}</td></tr>
+            <tr><td><strong>{="Port"}</strong></td><td>{$account.port|htmlentities}</td></tr>
+            <tr><td><strong>{="Bitrate"}</strong></td><td>{$account.maxbitrate|htmlentities} {="kbps"}</td></tr>
             <tr><td><strong>{="Mountpoint"}</strong></td><td>/live</td></tr>
-            <tr><td><strong>{="Password"}</strong>&nbsp;</td><td>({="The 'Source password' value from your %sstream settings%s","<a href='index.php?page=configure'>","</a>"})</td></tr>
+            <tr><td><strong>{="Password"}</strong></td><td>({="The 'Source password' value from your %sstream settings%s","<a href='index.php?page=configure'>","</a>"})</td></tr>
             </table>
+            <p class="spred spbold">{="If you have trouble with your connection to the server, check all your details twice. Any Broadcaster is working with our systems! Contact us, that we can guide you to a successful connection."}</p>
         {/if}
         {if $account.servertype=="IceCast"}
             <table class="table">
-            <tr><td><strong>{="Protocol"}</strong>&nbsp;</td><td>Icecast V2</td></tr>
-            <tr><td><strong>{="IP-Address"}</strong>&nbsp;</td><td>{$serverhostname|htmlentities}</td></tr>
-            <tr><td><strong>{="Port"}</strong>&nbsp;</td><td>{$account.port|htmlentities}</td></tr>
-            <tr><td><strong>{="Bitrate"}</strong>&nbsp;</td><td>{$account.maxbitrate|htmlentities} {="kbps"}</td></tr>
+            <tr><td><strong>{="Protocol"}</strong></td><td>Icecast V2</td></tr>
+            <tr><td><strong>{="IP-Address"}</strong></td><td>{$serverhostname|htmlentities}</td></tr>
+            <tr><td><strong>{="Port"}</strong></td><td>{$account.port|htmlentities}</td></tr>
+            <tr><td><strong>{="Bitrate"}</strong></td><td>{$account.maxbitrate|htmlentities} {="kbps"}</td></tr>
             <tr><td><strong>{="Mountpoint"}</strong></td><td>/live</td></tr>
-            <tr><td><strong>{="Password"}</strong>&nbsp;</td><td>({="The 'Source password' value from your %sstream settings%s","<a href='index.php?page=configure'>","</a>"})</td></tr>
+            <tr><td><strong>{="Username"}</strong></td><td>source</td></tr>
+            <tr><td><strong>{="Password"}</strong></td><td>({="The 'Source password' value from your %sstream settings%s","<a href='index.php?page=configure'>","</a>"})</td></tr>
             </table>
+            <p class="spred spbold">{="If you have trouble with your connection to the server, check all your details twice. Any Broadcaster is working with our systems! Contact us, that we can guide you to a successful connection."}</p>
         {/if}
 </div>
 </div>
@@ -208,15 +219,15 @@ display: none;
         <br />
         <table class="table">
             <tr>
-                <td>{="FTP Hostname"}:&nbsp;</td>
+                <td>{="FTP Hostname"}</td>
                 <td><strong>{$serverhostname}</strong></td>
             </tr>
             <tr>
-                <td>{="FTP Username"}:&nbsp;</td>
+                <td>{="FTP Username"}</td>
                 <td><strong>{$account.username}</strong></td>
             </tr>
             <tr>
-                <td height="38">{="FTP Password"}:&nbsp;</td>
+                <td height="38">{="FTP Password"}</td>
                 <td>({="The 'Administrator password' value from your %sstream settings%s","<a href='index.php?page=configure'>","</a>"})</td>
             </tr>
         </table>
